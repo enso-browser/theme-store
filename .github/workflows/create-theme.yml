@@ -25,7 +25,7 @@ jobs:
 
       - name: Parse issue
         id: issue-parser
-        uses: stefanbuck/github-issue-parser@v3
+        uses: stefanbuck/github-issue-parser@10dcc54158ba4c137713d9d69d70a2da63b6bda3 # v3
         with:
           template-path: .github/ISSUE_TEMPLATE/create-theme.yml
 
@@ -40,19 +40,19 @@ jobs:
           echo "THEME_IS_COLOR_THEME=${{ contains(fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'], 'JSON Color Theme') }}" >> $GITHUB_ENV
 
       - name: Write styles to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: "DamianReeves/write-file-action@1d019960841941be46b139298996df6f139cc7a4" # master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}
           path: theme-styles.css
 
       - name: Write readme to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: "DamianReeves/write-file-action@1d019960841941be46b139298996df6f139cc7a4" # master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
           path: theme-readme.md
 
       - name: Write preferences to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: "DamianReeves/write-file-action@1d019960841941be46b139298996df6f139cc7a4" # master
         if: fromJson(steps.issue-parser.outputs.jsonString)['preferences'] != ''
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
@@ -81,7 +81,7 @@ jobs:
 
       - name: Show error message
         if: failure()
-        uses: peter-evans/close-issue@v3
+        uses: peter-evans/close-issue@276d7966e389d888f011539a86c8920025ea0626 # v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           comment: |
@@ -92,7 +92,7 @@ jobs:
             > ${{ env.CREATION_OUTPUT }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v3
         if: success()
         with:
           add-paths: themes/
@@ -115,7 +115,7 @@ jobs:
           base: main
 
       - name: Close Issue
-        uses: peter-evans/close-issue@v3
+        uses: peter-evans/close-issue@276d7966e389d888f011539a86c8920025ea0626 # v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           comment: |
