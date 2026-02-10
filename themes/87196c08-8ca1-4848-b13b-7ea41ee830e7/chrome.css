@@ -1,23 +1,23 @@
 #tab-preview-panel {
-	/* Matches Zen main background color, also supports gradients */
-	@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledBackgroundNative') {
-		--panel-background: var(--zen-main-browser-background-toolbar) !important;
+	/* Matches Enso main background color, also supports gradients */
+	@media (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledBackgroundNative') {
+		--panel-background: var(--enso-main-browser-background-toolbar) !important;
 	}
 
-	/* Matches Zen panel radius */
-	@media not (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+	/* Matches Enso panel radius */
+	@media not (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
 		border-radius: var(--panel-border-radius) !important;
 	}
 
 	/* Custom border radius for tab preview*/
-	@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+	@media (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
 		--panel-border-radius: var(
-			--zen-mods-TabPreviewEnhanced-borderRadiusAmount
+			--enso-mods-TabPreviewEnhanced-borderRadiusAmount
 		) !important;
 	}
 
 	/* Removes border around tab preview */
-	--zen-appcontent-border: transparent !important;
+	--enso-appcontent-border: transparent !important;
 
 	/* Shifts panel to the slightly right */
 	/* TODO: Make customizable */
@@ -27,9 +27,9 @@
 .tab-preview-thumbnail-container {
 	/* Fixes proper tab preview image sizing */
 	&:has(canvas) {
-		@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledMargins') {
+		@media (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledMargins') {
 			/* Add padding around tab preview image */
-			padding: var(--zen-element-separation);
+			padding: var(--enso-element-separation);
 		}
 
 		/* Hide border above preview */
@@ -40,7 +40,7 @@
 
 		/* Shrink preview to match added padding */
 		/* TODO: Make optional */
-		width: calc(var(--panel-width) - (var(--zen-element-separation) * 2)) px !important;
+		width: calc(var(--panel-width) - (var(--enso-element-separation) * 2)) px !important;
 		height: unset !important;
 
 		/* Some safety code to maintain aspect ratio */
@@ -48,15 +48,15 @@
 	}
 
 	canvas {
-		/* Matches Zen panel radius */
-		@media not (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+		/* Matches Enso panel radius */
+		@media not (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
 			border-radius: calc(var(--panel-border-radius) / 1.3) !important;
 		}
 
 		/* Custom border radius for tab preview image */
-		@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+		@media (-moz-bool-pref: 'enso.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
 			border-radius: calc(
-				var(--zen-mods-TabPreviewEnhanced-borderRadiusAmount) / 1.3
+				var(--enso-mods-TabPreviewEnhanced-borderRadiusAmount) / 1.3
 			) !important;
 		}
 	}

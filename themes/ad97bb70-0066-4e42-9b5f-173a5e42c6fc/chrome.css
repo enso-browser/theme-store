@@ -1,23 +1,23 @@
-@media (-moz-pref("zen.tabs.vertical")) {
+@media (-moz-pref("enso.tabs.vertical")) {
   /* Prevents stuff from being clipped off from bottom of Essentials */
-  .zen-essentials-container {
+  .enso-essentials-container {
     overflow: visible !important;
   }
 
   /* Makes essentials transparent (when toggled) */
   @media (-moz-pref("uc.essentials.color-scheme", "transparent")) {
-    .tabbrowser-tab[zen-essential="true"]:not(:hover):not([selected="true"])
+    .tabbrowser-tab[enso-essential="true"]:not(:hover):not([selected="true"])
       .tab-stack
       .tab-background {
       background-color: transparent !important;
     }
   }
 
-  @media (-moz-pref("zen.view.sidebar-expanded")) {
+  @media (-moz-pref("enso.view.sidebar-expanded")) {
     /* Default essentials-width and essentials-gap variables (set to browser default) to fix some bugs */
     :root,
-    .zen-essentials-container {
-      --essentials-gap: calc(var(--zen-toolbox-padding) - 2px);
+    .enso-essentials-container {
+      --essentials-gap: calc(var(--enso-toolbox-padding) - 2px);
 
       @media (-moz-pref("uc.essentials.width", "Thin")) {
         --min-essentials-width-wrap: 50px !important;
@@ -46,13 +46,13 @@
 
     @media (-moz-pref("uc.essentials.width")) {
       @media (-moz-pref("uc.essentials.auto-grow")) {
-        .tabbrowser-tab[zen-essential] {
-          min-width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
+        .tabbrowser-tab[enso-essential] {
+          min-width: calc(100% - var(--enso-toolbox-padding) * 2) !important;
         }
       }
 
       @media (-moz-pref("uc.essentials.grid-count")) {
-        .zen-essentials-container {
+        .enso-essentials-container {
           grid-template-columns: repeat(
             var(--mod-superpins-essentials-grid-count),
             minmax(var(--min-essentials-width-wrap), auto)
@@ -62,7 +62,7 @@
     }
 
     @media (-moz-pref("uc.essentials.gap")) {
-      .zen-essentials-container {
+      .enso-essentials-container {
         gap: var(--essentials-gap) var(--essentials-gap) !important;
       }
     }
@@ -75,8 +75,8 @@
         }
     }
 
-    .zen-workspace-pinned-tabs-section:not(
-        :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+        :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
       ):has(> :nth-child(2)) {
       &:has(> :nth-child(3)) {
         padding-bottom: 6px !important;
@@ -95,8 +95,8 @@
   }
 
   @media (-moz-pref("uc.tabs.show-separator", "pinned-shown")) {
-    .zen-workspace-pinned-tabs-section:not(
-        :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+        :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
       ):not(:has(.tabbrowser-tab)):has(> :nth-child(2)) {
       padding-bottom: 0 !important;
     
@@ -113,26 +113,26 @@
   }
 
   @media (-moz-pref("uc.tabs.show-separator", "essentials-shown")) {
-    zen-workspace[active="true"]:has(.zen-workspace-pinned-tabs-section .tabbrowser-tab) {
+    enso-workspace[active="true"]:has(.enso-workspace-pinned-tabs-section .tabbrowser-tab) {
       &:has(
-        ~ #zen-tabs-wrapper
+        ~ #enso-tabs-wrapper
           #enso-browser-tabs-container
           #vertical-pinned-tabs-container
-          .zen-workspace-tabs-section[active="true"]
+          .enso-workspace-tabs-section[active="true"]
           .tabbrowser-tab
       ) {
         margin-top: 6px !important;
       }
     }
 
-    .zen-essentials-container {
-      &:has(> :nth-child(1)) ~ #zen-tabs-wrapper .zen-workspace-pinned-tabs-section {
+    .enso-essentials-container {
+      &:has(> :nth-child(1)) ~ #enso-tabs-wrapper .enso-workspace-pinned-tabs-section {
         min-height: 20px !important;
       }
     }
 
-    .zen-essentials-container {
-      &:has(> :nth-child(1)) ~ #zen-tabs-wrapper .zen-workspace-pinned-tabs-section {
+    .enso-essentials-container {
+      &:has(> :nth-child(1)) ~ #enso-tabs-wrapper .enso-workspace-pinned-tabs-section {
         .pinned-tabs-container-separator {
           max-height: unset !important;
         }
@@ -142,14 +142,14 @@
 
   /* Enables legacy layout for pinned tabs (icon only in grid) */
   @media (-moz-pref("uc.pins.legacy-layout")) {
-    .zen-tab-group-start {
+    .enso-tab-group-start {
       display: none;
     }
 
-    #navigator-toolbox[zen-sidebar-expanded="true"] {
+    #navigator-toolbox[enso-sidebar-expanded="true"] {
       & #tabbrowser-tabs {
         & .tabbrowser-tab {
-          &[zen-pinned-changed="true"]:not([zen-essential])
+          &[enso-pinned-changed="true"]:not([enso-essential])
             > .tab-stack
             > .tab-content
             > .tab-icon-stack {
@@ -161,8 +161,8 @@
     }
 
     #vertical-pinned-tabs-container,
-    .zen-workspace-pinned-tabs-section:not(
-      :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+      :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
     ) {
       .tabbrowser-tab[pinned] {
         .tab-close-button,
@@ -175,9 +175,9 @@
     }
 
     /*disable icon shift when tab was renamed*/
-    #navigator-toolbox[zen-sidebar-expanded="true"] {
-      & #vertical-pinned-tabs-container > .zen-workspace-tabs-section,
-      & .zen-workspace-pinned-tabs-section {
+    #navigator-toolbox[enso-sidebar-expanded="true"] {
+      & #vertical-pinned-tabs-container > .enso-workspace-tabs-section,
+      & .enso-workspace-pinned-tabs-section {
         & .tabbrowser-tab > .tab-stack > .tab-content > .tab-icon-stack {
           left: unset !important;
         }
@@ -186,16 +186,16 @@
 
     /* Make pinned tabs auto-grow to span full width of row */
     @media (-moz-pref("uc.pins.auto-grow")) {
-      .zen-workspace-pinned-tabs-section:not(
-        :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+      .enso-workspace-pinned-tabs-section:not(
+        :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
       ) {
         &,
-        zen-folder > .tab-group-container {
+        enso-folder > .tab-group-container {
           display: flex !important;
           flex-wrap: wrap !important;
           flex-direction: row !important;
 
-          & > zen-folder {
+          & > enso-folder {
             flex-basis: 100%;
           }
 
@@ -214,7 +214,7 @@
         &[orient="vertical"] {
           writing-mode: vertical-lr;
           block-size: calc(
-            var(--actual-zen-sidebar-width) - var(--zen-toolbox-padding) * 2
+            var(--actual-enso-sidebar-width) - var(--enso-toolbox-padding) * 2
           ) !important;
 
           & > * {
@@ -225,9 +225,9 @@
 
       @media (-moz-pref("uc.pins.grid-count")) {
         /* Logic for pinned tabs that have auto-grow and grid-count. Must use +1 to fix */
-        #vertical-pinned-tabs-container > .zen-workspace-tabs-section,
-        .zen-workspace-pinned-tabs-section:not(
-          :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+        #vertical-pinned-tabs-container > .enso-workspace-tabs-section,
+        .enso-workspace-pinned-tabs-section:not(
+          :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
         ) {
           & > .tabbrowser-tab {
             width: calc(100% / (var(--mod-superpins-pins-grid-count) + 1)) !important;
@@ -237,11 +237,11 @@
     }
 
     @media not (-moz-pref("uc.pins.auto-grow")) {
-      .zen-workspace-pinned-tabs-section:not(
-        :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+      .enso-workspace-pinned-tabs-section:not(
+        :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
       ) {
         &,
-        zen-folder > .tab-group-container {
+        enso-folder > .tab-group-container {
           grid-template-columns: repeat(
             auto-fit,
             minmax(var(--tab-pinned-min-width-expanded), auto)
@@ -256,27 +256,27 @@
           }
         }
 
-        zen-folder {
+        enso-folder {
           grid-column: -1 / 1;
         }
       }
     }
 
     /* The actual grid layout */
-    .zen-workspace-pinned-tabs-section:not(
-      :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+      :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
     ) {
       &:has(> :nth-child(3)),
-      zen-folder > .tab-group-container:has(> :nth-child(3)) {
+      enso-folder > .tab-group-container:has(> :nth-child(3)) {
         position: relative !important;
         overflow: visible !important;
         gap: 3px 3px !important;
-        max-width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
+        max-width: calc(100% - var(--enso-toolbox-padding) * 2) !important;
       }
 
       &:has(> :nth-child(3)) {
-        margin: 0 var(--zen-toolbox-padding) !important;
-        padding: 0 var(--zen-toolbox-padding) !important;
+        margin: 0 var(--enso-toolbox-padding) !important;
+        padding: 0 var(--enso-toolbox-padding) !important;
       }
 
       &:has(> :nth-child(2)) {
@@ -305,7 +305,7 @@
         margin: auto !important;
       }
 
-      zen-folder > .tab-group-container:has(> :nth-child(3)) {
+      enso-folder > .tab-group-container:has(> :nth-child(3)) {
         margin-inline-start: 14px !important;
 
         & > * {
@@ -314,7 +314,7 @@
         }
       }
 
-      zen-folder[collapsed] .tab-group-container {
+      enso-folder[collapsed] .tab-group-container {
         display: none !important;
       }
     }
@@ -324,7 +324,7 @@
       bottom: 0 !important;
       left: 50% !important;
       transform: translateX(-50%) !important;
-      width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
+      width: calc(100% - var(--enso-toolbox-padding) * 2) !important;
     }
 
     @media (-moz-pref("arcline.superpin")) {
@@ -336,14 +336,14 @@
 
   /* Make Essentials look more box like */
   @media (-moz-pref("uc.essentials.box-like-corners")) {
-    .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+    .tabbrowser-tab[enso-essential="true"] .tab-stack .tab-background {
       border-radius: 5px !important;
     }
   }
 
   /* If Essentials have a grid count but do not have auto-grow on */
   @media (-moz-pref("uc.essentials.grid-count")) {
-    .zen-essentials-container {
+    .enso-essentials-container {
       grid-template-columns: repeat(
         var(--mod-superpins-essentials-grid-count),
         minmax(var(--min-essentials-width-wrap), auto)
@@ -353,7 +353,7 @@
 
   /* Make Essentials auto-grow to span full width of a row */
   @media (-moz-pref("uc.essentials.auto-grow")) {
-    .tabbrowser-tab[zen-essential="true"] {
+    .tabbrowser-tab[enso-essential="true"] {
       width: auto !important;
       min-width: var(--min-essentials-width-wrap) !important;
       flex: 1 1 auto !important;
@@ -361,12 +361,12 @@
 
     @media (-moz-pref("uc.essentials.grid-count")) {
       /* For auto-grow with grid-count. must use +1 to fix a bug */
-      .tabbrowser-tab[zen-essential="true"] {
+      .tabbrowser-tab[enso-essential="true"] {
         width: calc(100% / (var(--mod-superpins-essentials-grid-count) + 1)) !important;
       }
     }
 
-    .zen-essentials-container {
+    .enso-essentials-container {
       display: flex !important;
       flex-wrap: wrap !important;
       flex-direction: row !important;
@@ -400,37 +400,37 @@
       overflow-x: hidden !important;
     }
 
-    .zen-essentials-container {
+    .enso-essentials-container {
       position: relative !important;
       margin-top: auto !important;
       padding-top: 8px !important;
     }
 
     /* Adds padding-bottom only when media controls are visible */
-    #zen-media-controls-toolbar:not([hidden]) ~ .zen-essentials-container {
+    #enso-media-controls-toolbar:not([hidden]) ~ .enso-essentials-container {
       padding-bottom: 10px !important;
     }
 
-    #zen-essentials {
+    #enso-essentials {
       order: 999 !important;
       margin-bottom: 5px;
     }
 
-    #tabbrowser-arrowscrollbox > zen-workspace {
+    #tabbrowser-arrowscrollbox > enso-workspace {
       width: 100% !important;
       padding-top: 0 !important;
     }
 
-    #navigator-toolbox[zen-sidebar-expanded="true"] {
-      .zen-essentials-container {
+    #navigator-toolbox[enso-sidebar-expanded="true"] {
+      .enso-essentials-container {
         min-width: 100% !important;
         width: 100% !important;
       }
     }
   }
 
-  @media (-moz-pref("uc.essentials.position", "bottom")) and (-moz-pref("zen.workspaces.indicator-position", "bottom")) {
-    .zen-current-workspace-indicator {
+  @media (-moz-pref("uc.essentials.position", "bottom")) and (-moz-pref("enso.workspaces.indicator-position", "bottom")) {
+    .enso-current-workspace-indicator {
       margin-bottom: -10px;
       margin-right: 0.5px;
     }
@@ -450,8 +450,8 @@
       }
     }
 
-    .zen-workspace-pinned-tabs-section:not(
-      :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+      :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
     ) {
       /* background color of pinned tabs in a normal state (not hovered/selected) */
       .tabbrowser-tab[pinned] .tab-stack .tab-background {
@@ -494,50 +494,50 @@
   }
 
   @media (-moz-pref("uc.pins.transition-bg")) {
-    .tabbrowser-tab[pinned]:not([zen-essential]) .tab-background {
+    .tabbrowser-tab[pinned]:not([enso-essential]) .tab-background {
       transition: background-color var(--uc-pins-transition-speed) ease;
     }
   }
 
   @media (-moz-pref("uc.essentials.transition-bg")) {
-    .tabbrowser-tab[zen-essential] .tab-background {
+    .tabbrowser-tab[enso-essential] .tab-background {
       transition: background-color var(--uc-essentials-transition-speed) ease;
     }
   }
 
   /* Adds border to Pins/Essentials (when toggled) */
   @media (-moz-pref("uc.superpins.border", "essentials")) {
-    .zen-essentials-container {
-      & .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+    .enso-essentials-container {
+      & .tabbrowser-tab[enso-essential="true"] .tab-stack .tab-background {
         border: 1px solid
           light-dark(
-            color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
-            color-mix(in srgb, var(--zen-colors-secondary) 80%, white)
+            color-mix(in srgb, var(--enso-colors-secondary) 80%, black),
+            color-mix(in srgb, var(--enso-colors-secondary) 80%, white)
           ) !important;
       }
     }
   }
 
   @media (-moz-pref("uc.superpins.border", "pins")) {
-    .tabbrowser-tab[pinned]:not([zen-essential="true"]) .tab-stack .tab-background,
-    #vertical-pinned-tabs-container > .zen-workspace-tabs-section tab-group,
-    .zen-workspace-pinned-tabs-section tab-group {
+    .tabbrowser-tab[pinned]:not([enso-essential="true"]) .tab-stack .tab-background,
+    #vertical-pinned-tabs-container > .enso-workspace-tabs-section tab-group,
+    .enso-workspace-pinned-tabs-section tab-group {
       border: 1px solid
         light-dark(
-          color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
-          color-mix(in srgb, var(--zen-colors-secondary) 80%, white)
+          color-mix(in srgb, var(--enso-colors-secondary) 80%, black),
+          color-mix(in srgb, var(--enso-colors-secondary) 80%, white)
         ) !important;
     }
   }
 
   @media (-moz-pref("uc.superpins.border", "both")) {
     .tabbrowser-tab[pinned] .tab-stack .tab-background,
-    #vertical-pinned-tabs-container > .zen-workspace-tabs-section tab-group,
-    .zen-workspace-pinned-tabs-section tab-group {
+    #vertical-pinned-tabs-container > .enso-workspace-tabs-section tab-group,
+    .enso-workspace-pinned-tabs-section tab-group {
       border: 1px solid
         light-dark(
-          color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
-          color-mix(in srgb, var(--zen-colors-secondary) 80%, white)
+          color-mix(in srgb, var(--enso-colors-secondary) 80%, black),
+          color-mix(in srgb, var(--enso-colors-secondary) 80%, white)
         ) !important;
     }
   }
@@ -545,8 +545,8 @@
   /* Let pinned tabs have the same selected styling as essentials */
   @media (-moz-pref("uc.pins.essentials-layout")) {
     /* Specific query to overwrite previous one */
-    .zen-workspace-pinned-tabs-section:not(
-        :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+        :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
       ):has(> :nth-child(3)) {
       @media (-moz-pref("uc.essentials.width")) {
         grid-template-columns: repeat(
@@ -565,7 +565,7 @@
     }
 
     @media (-moz-pref("uc.pins.grid-count")) {
-      .zen-workspace-pinned-tabs-section {
+      .enso-workspace-pinned-tabs-section {
         grid-template-columns: repeat(
           var(auto-fit, --mod-superpins-pins-grid-count),
           minmax(var(--min-essentials-width-wrap), auto)
@@ -598,17 +598,17 @@
   }
 
   @media (-moz-pref("uc.pinned.height")) {
-    .zen-workspace-pinned-tabs-section .tabbrowser-tab {
+    .enso-workspace-pinned-tabs-section .tabbrowser-tab {
       height: var(--pins-height) !important;
     }
   }
 
   @media (-moz-pref("uc.essentials.same-height")) {
-    .tabbrowser-tab[zen-essential] {
+    .tabbrowser-tab[enso-essential] {
       height: var(--pins-height) !important;
     }
 
-    .tabbrowser-tab[zen-essential] .tab-background {
+    .tabbrowser-tab[enso-essential] .tab-background {
       min-height: var(--pins-height) !important;
     }
   }
@@ -656,60 +656,60 @@
 
   /* workspace icons size */
   @media (-moz-pref("uc.workspace.icon.size", "x-small")) {
-    #zen-workspaces-button {
+    #enso-workspaces-button {
       font-size: x-small !important;
     }
   }
 
   @media (-moz-pref("uc.workspace.icon.size", "small")) {
-    #zen-workspaces-button {
+    #enso-workspaces-button {
       font-size: small !important;
     }
   }
 
   @media (-moz-pref("uc.workspace.icon.size", "medium")) {
-    #zen-workspaces-button {
+    #enso-workspaces-button {
       font-size: medium !important;
     }
   }
 
   @media (-moz-pref("uc.workspace.icon.size", "large")) {
-    #zen-workspaces-button {
+    #enso-workspaces-button {
       font-size: large !important;
     }
   }
 
   /* current workspace icons size */
   @media (-moz-pref("uc.workspace.current.icon.size", "small")) {
-    .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+    .enso-current-workspace-indicator .enso-current-workspace-indicator-icon {
       font-size: 12px !important;
     }
   }
 
   @media (-moz-pref("uc.workspace.current.icon.size", "normal")) {
-    .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+    .enso-current-workspace-indicator .enso-current-workspace-indicator-icon {
       font-size: 14.5px !important;
     }
   }
 
   @media (-moz-pref("uc.workspace.current.icon.size", "large")) {
-    .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+    .enso-current-workspace-indicator .enso-current-workspace-indicator-icon {
       font-size: 16px !important;
     }
   }
 
   /* Increase margin below Essentials in case the workspace indicator is not visible. */
-  @media not (-moz-pref("zen.workspaces.show-workspace-indicator")) {
-    .zen-current-workspace-indicator {
+  @media not (-moz-pref("enso.workspaces.show-workspace-indicator")) {
+    .enso-current-workspace-indicator {
       display: none !important;
     }
 
-    .zen-essentials-container {
+    .enso-essentials-container {
       padding-bottom: 5px;
     }
 
     @media not (-moz-pref("uc.tabs.show-separator", "essentials-shown")) {
-      #tabbrowser-tabs:has(.zen-essentials-container) #zen-tabs-wrapper {
+      #tabbrowser-tabs:has(.enso-essentials-container) #enso-tabs-wrapper {
         margin-top: 6px !important;
       }
     }
@@ -750,16 +750,16 @@
   }
 
   @media (-moz-pref("uc.pins.stay-at-top")) {
-    zen-workspace > arrowscrollbox.workspace-arrowscrollbox {
+    enso-workspace > arrowscrollbox.workspace-arrowscrollbox {
       overflow-y: hidden !important;
       flex-basis: 100%;
     }
 
-    #tabbrowser-arrowscrollbox .zen-workspace-pinned-tabs-section {
+    #tabbrowser-arrowscrollbox .enso-workspace-pinned-tabs-section {
       flex: 0 1 0;
     }
 
-    #tabbrowser-arrowscrollbox .zen-workspace-normal-tabs-section {
+    #tabbrowser-arrowscrollbox .enso-workspace-normal-tabs-section {
       flex: 1 1 0;
       overflow-y: auto !important;
       margin-bottom: 5px;
@@ -767,8 +767,8 @@
   }
 
   @media (-moz-pref("uc.pins.active-bg")) {
-    .zen-workspace-pinned-tabs-section:not(
-      :has([zen-dragtarget], zen-folder .tab-group-label-container[zen-dragtarget])
+    .enso-workspace-pinned-tabs-section:not(
+      :has([enso-dragtarget], enso-folder .tab-group-label-container[enso-dragtarget])
     ) {
       .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background {
         background-color: var(--mod-superpins-pins-active-bg) !important;
@@ -782,69 +782,69 @@
     }
   }
 
-  @media (-moz-pref("zen.workspaces.indicator-name-center")) {
-    .zen-current-workspace-indicator-stack {
+  @media (-moz-pref("enso.workspaces.indicator-name-center")) {
+    .enso-current-workspace-indicator-stack {
       position: absolute;
     }
 
-    .zen-current-workspace-indicator-name {
+    .enso-current-workspace-indicator-name {
       position: absolute;
       transform: translateX(-50%);
       left: 50%;
     }
   }
 
-  @media (-moz-pref("zen.workspaces.indicator-position", "top")),
-    (-moz-pref("zen.workspaces.indicator-position", "bottom")) {
-    .zen-current-workspace-indicator {
+  @media (-moz-pref("enso.workspaces.indicator-position", "top")),
+    (-moz-pref("enso.workspaces.indicator-position", "bottom")) {
+    .enso-current-workspace-indicator {
       position: fixed !important;
 
       &::before {
-        width: calc(100% - var(--zen-toolbox-padding) * 2.6) !important;
+        width: calc(100% - var(--enso-toolbox-padding) * 2.6) !important;
       }
     }
 
-    .zen-workspaces-actions {
+    .enso-workspaces-actions {
       padding: 0 2px !important;
     }
 
-    .zen-workspace-pinned-tabs-section {
+    .enso-workspace-pinned-tabs-section {
       margin-top: 4px !important;
     }
 
-    #zen-essentials {
+    #enso-essentials {
       margin-bottom: 5px;
     }
   }
 
-  @media (-moz-pref("zen.workspaces.indicator-position", "top")) {
-    zen-workspace {
+  @media (-moz-pref("enso.workspaces.indicator-position", "top")) {
+    enso-workspace {
       overflow: visible !important;
       padding-bottom: 50px !important;
     }
 
-    #zen-essentials {
+    #enso-essentials {
       margin-top: 48px;
     }
 
-    .zen-current-workspace-indicator {
+    .enso-current-workspace-indicator {
       top: -48px;
     }
   }
 
-  @media (-moz-pref("zen.workspaces.indicator-position", "bottom")) {
+  @media (-moz-pref("enso.workspaces.indicator-position", "bottom")) {
     .workspace-arrowscrollbox {
       margin-bottom: 48px !important;
     }
 
-    .zen-current-workspace-indicator {
+    .enso-current-workspace-indicator {
       bottom: 5px;
     }
   }
 
   @media (-moz-pref("uc.remove-sidebar-scrollbar")) {
     scrollbox:nth-child(5),
-    #tabbrowser-arrowscrollbox .zen-workspace-normal-tabs-section {
+    #tabbrowser-arrowscrollbox .enso-workspace-normal-tabs-section {
       scrollbar-width: none !important;
     }
   }

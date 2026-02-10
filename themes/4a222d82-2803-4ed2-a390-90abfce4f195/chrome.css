@@ -1,4 +1,4 @@
-:root:not([customizing]) #zen-sidebar-top-buttons-separator {
+:root:not([customizing]) #enso-sidebar-top-buttons-separator {
   display: none !important;
 }
 :root:not([customizing]) #back-button {

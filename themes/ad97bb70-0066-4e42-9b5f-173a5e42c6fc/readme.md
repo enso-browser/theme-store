@@ -1,8 +1,8 @@
 # SuperPins
 
-This **Zen Mod** elevates your experience with pinned tabs and Essentials by making some UI/UX changes.
+This **Enso Mod** elevates your experience with pinned tabs and Essentials by making some UI/UX changes.
 
-## Features (toggle in Zens Mod settings):
+## Features (toggle in Enso Mod settings):
   - Increase the width of Essentials/Pins (This can be controlled through a dropdown)
   - Controllable Margins between Essentials/Pins (3 Options Dropdown)
   - Move Essentials to the bottom ([@CosmoCreeper](https://github.com/CosmoCreeper))

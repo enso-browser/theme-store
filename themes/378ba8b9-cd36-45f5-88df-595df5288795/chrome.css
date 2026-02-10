@@ -1,6 +1,6 @@
-#urlbar[zen-newtab="true"] {
+#urlbar[enso-newtab="true"] {
   #identity-icon {
-    list-style-image: url("chrome://browser/skin/zen-icons/new-tab-image.svg") !important;
+    list-style-image: url("chrome://browser/skin/enso-icons/new-tab-image.svg") !important;
     filter: opacity(0.5) !important;
   }
 

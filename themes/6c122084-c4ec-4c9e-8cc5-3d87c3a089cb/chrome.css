@@ -1,9 +1,9 @@
 #nav-bar {
-  margin-top: var(--zen-element-separation) !important;
-  margin-bottom: var(--zen-element-separation) !important;
+  margin-top: var(--enso-element-separation) !important;
+  margin-bottom: var(--enso-element-separation) !important;
 }
 toolbarbutton.titlebar-button {
-    height: calc(38px + 2 * var(--zen-element-separation)) !important;
-    width: calc(38px + 2 * var(--zen-element-separation)) !important;
-    margin-top: calc(-1 * var(--zen-element-separation)) !important;
+    height: calc(38px + 2 * var(--enso-element-separation)) !important;
+    width: calc(38px + 2 * var(--enso-element-separation)) !important;
+    margin-top: calc(-1 * var(--enso-element-separation)) !important;
 }

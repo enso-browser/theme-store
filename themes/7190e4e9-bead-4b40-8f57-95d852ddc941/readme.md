@@ -1,5 +1,5 @@
 
-# Zen Mod: Tab title fixes
+# Enso Mod: Tab title fixes
 
 Increase size of tab titles and add make pending tabs standing out more.
 

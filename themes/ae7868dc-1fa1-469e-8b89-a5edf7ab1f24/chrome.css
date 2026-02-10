@@ -1,4 +1,4 @@
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-bool-pref: "enso.view.use-single-toolbar") {
     .browserSidebarContainer.deck-selected::before {
       content: "" !important;
       position: absolute !important;
@@ -14,33 +14,33 @@
     }    /* Current tab loading progress and muted status */
     
     
-    .browserSidebarContainer.deck-selected:has([zen-glance-selected])::before,
-    .browserSidebarContainer.deck-selected.zen-glance-overlay::before {
+    .browserSidebarContainer.deck-selected:has([enso-glance-selected])::before,
+    .browserSidebarContainer.deck-selected.enso-glance-overlay::before {
       max-width: calc(85%) !important;
       left: calc(15%/2) !important;
       border-radius: 6px !important;
     }
     
-    .browserSidebarContainer.deck-selected.zen-glance-background::before {
+    .browserSidebarContainer.deck-selected.enso-glance-background::before {
       background: transparent !important;
       height: 0px !important;
     }
     
     :root {
       &:has(.tabbrowser-tab[selected][busy]) {
-        --bar-colour: var(--zen-primary-color);
+        --bar-colour: var(--enso-primary-color);
         --bar-pcent: 15%;
       }
       &:has(.tabbrowser-tab[selected][busy][pendingicon]) {
-        --bar-colour: var(--zen-primary-color);
+        --bar-colour: var(--enso-primary-color);
         --bar-pcent: 45%;
       }
       &:has(.tabbrowser-tab[selected][busy][pendingicon][progress]) {
-        --bar-colour: var(--zen-primary-color);
+        --bar-colour: var(--enso-primary-color);
         --bar-pcent: 85%;
       }
       &:has(.tabbrowser-tab[selected][busy][progress]) {
-        --bar-colour: var(--zen-primary-color);
+        --bar-colour: var(--enso-primary-color);
         --bar-pcent: 95%;
       }
       &:has(.tabbrowser-tab[selected][muted]:not([busy])) {

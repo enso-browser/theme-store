@@ -1,4 +1,4 @@
-# zen-customize-fonts-size
+# enso-customize-fonts-size
 
 # Customize Font Sizes
 

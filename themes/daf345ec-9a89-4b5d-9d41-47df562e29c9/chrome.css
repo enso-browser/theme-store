@@ -7,7 +7,7 @@
   }
 }
 
-#zen-main-app-wrapper::before {
+#enso-main-app-wrapper::before {
   content: "";
   animation: secret-theme-animation 6s infinite;
   animation-delay: 2s;

@@ -8,8 +8,8 @@
 }
 
 #browser::after {
-  --snowsize: var(--zen-mods-WinterSpirit-snowflakeSize, 350px);
-  --snowfall: var(--zen-mods-WinterSpirit-duration, 30s);
+  --snowsize: var(--enso-mods-WinterSpirit-snowflakeSize, 350px);
+  --snowfall: var(--enso-mods-WinterSpirit-duration, 30s);
 
   content: "";
   position: fixed;

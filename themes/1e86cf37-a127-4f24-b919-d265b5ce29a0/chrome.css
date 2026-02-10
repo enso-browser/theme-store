@@ -1,6 +1,6 @@
 /*
 * github.com/KiKaraage/
-* ZenMods/Lean
+* EnsoMods/Lean
 * Show things only when you need it: Top & bottom buttons, workspace indicator, bookmarks bar and more
 */
 
@@ -12,7 +12,7 @@
 }
 
 /* 2 - Show translation button when hovering URL bar in Single Toolbar mode */
-:root[zen-single-toolbar='true'] {
+:root[enso-single-toolbar='true'] {
   @media (-moz-bool-pref: "mod.lean.show-translation") {
     #urlbar:hover {
       #translations-button {
@@ -47,7 +47,7 @@
 }
 
 /* 3 - Show page action button for extensions when hovering URL bar in Single Toolbar mode */
-:root[zen-single-toolbar='true'] {
+:root[enso-single-toolbar='true'] {
   @media (-moz-bool-pref: "mod.lean.show-pageactions") {
     #urlbar:hover {
       .urlbar-addon-page-action {
@@ -63,16 +63,16 @@
 /* 4 - Hide top workspace indicator unless when editing space name
  * + adjust Essentials area bottom padding */
 @media -moz-pref("mod.lean.top-workspace") {
-  .zen-current-workspace-indicator:not(:has(.tab-label-container-editing)) {
+  .enso-current-workspace-indicator:not(:has(.tab-label-container-editing)) {
     visibility: collapse !important;
   }
   @media -moz-pref("mod.lean.pinned-ext") {
-    .zen-essentials-container:not(:empty) {
+    .enso-essentials-container:not(:empty) {
       padding-bottom: 4px !important;
     }
     @media not -moz-pref("mod.lean.bottom-buttons") {
-      #main-window[zen-single-toolbar="true"] {
-        .zen-essentials-container {
+      #main-window[enso-single-toolbar="true"] {
+        .enso-essentials-container {
           padding-bottom: 4px !important;
           padding-top: 4px !important;
         }
@@ -80,11 +80,11 @@
     }
   }
   @media not -moz-pref("mod.lean.pinned-ext") {
-    .zen-essentials-container:not(:empty), .zen-current-workspace-indicator {
+    .enso-essentials-container:not(:empty), .enso-current-workspace-indicator {
       padding-bottom: 0px !important;
     }
-    #main-window[zen-single-toolbar="true"] {
-      .zen-essentials-container {
+    #main-window[enso-single-toolbar="true"] {
+      .enso-essentials-container {
         padding-bottom: 6px !important;
       }
     }
@@ -94,11 +94,11 @@
 /* 5 - Hide bottom buttons area unless tab sidebar is hovered */
 :root:not([customizing]) {
   @media -moz-pref("mod.lean.bottom-buttons") {
-    #zen-sidebar-foot-buttons, #zen-workspaces-button, #zen-sidebar-foot-buttons toolbarbutton {
+    #enso-sidebar-foot-buttons, #enso-workspaces-button, #enso-sidebar-foot-buttons toolbarbutton {
       transition: ease 0.2s !important;
     }
     #titlebar:not(:hover) {
-      zen-workspace {
+      enso-workspace {
         & > arrowscrollbox {
           &[overflowing] {
             &::after {
@@ -107,11 +107,11 @@
           }
         }
       }
-      #zen-sidebar-foot-buttons {
+      #enso-sidebar-foot-buttons {
         min-height: 3px !important;
         gap: 1px !important;
         padding-top: 1px !important;
-        toolbarbutton, #zen-workspaces-button {
+        toolbarbutton, #enso-workspaces-button {
           opacity: 0 !important;
           height: 0px !important;
         }
@@ -122,21 +122,21 @@
 
 /* 6 - Ninja top buttons on Single Toolbar mode
  * You can hover slightly above URL bar to access the top buttons, but you can't see it */
-:root[zen-single-toolbar="true"] {
+:root[enso-single-toolbar="true"] {
   --top-toolbar-hover-opacity: 0;
   @media -moz-pref("mod.lean.ninja-top-buttons") {
-    #zen-sidebar-top-buttons, #zen-sidebar-top-buttons-customization-target, #zen-sidebar-top-buttons toolbarbutton {
+    #enso-sidebar-top-buttons, #enso-sidebar-top-buttons-customization-target, #enso-sidebar-top-buttons toolbarbutton {
       transition: ease 0.2s !important;
     }
     #navigator-toolbox {
-      & #zen-appcontent-navbar-wrapper, & #zen-sidebar-top-buttons {
-        --zen-toolbar-height: 1px !important;
+      & #enso-appcontent-navbar-wrapper, & #enso-sidebar-top-buttons {
+        --enso-toolbar-height: 1px !important;
         opacity: var(--top-toolbar-hover-opacity) !important;
         z-index: 9 !important;
       }
     }
     #navigator-toolbox:not(:hover) {
-      & #zen-appcontent-navbar-wrapper, & #zen-sidebar-top-buttons {
+      & #enso-appcontent-navbar-wrapper, & #enso-sidebar-top-buttons {
         opacity: 0 !important;
       }
     }
@@ -146,7 +146,7 @@
 
 /* 7 - Only show bookmarks when hovering top navigation bar on Multiple & Collapsed Toolbar mode
  * Mimicking how it works on Single Toolbar */
-:root:not([zen-single-toolbar="true"]) {
+:root:not([enso-single-toolbar="true"]) {
   @media -moz-pref("mod.lean.bookmarks") {
     #PersonalToolbar:not([collapsed="true"]) {   
       min-height: 2px !important;
@@ -160,7 +160,7 @@
         height: 30px !important;
       }
     }  
-    #zen-appcontent-navbar-container:hover {
+    #enso-appcontent-navbar-container:hover {
       #PersonalToolbar {
         opacity: 1;
         height: 30px !important;
@@ -177,9 +177,9 @@
 
 /* Part A: When bottom buttons is always shown */
 @media -moz-pref("mod.lean.pinned-ext") {
-  #main-window[zen-single-toolbar="true"] {
+  #main-window[enso-single-toolbar="true"] {
     #titlebar {
-      zen-workspace {
+      enso-workspace {
         & > arrowscrollbox {
           &[overflowing] {
             &::after {
@@ -189,23 +189,23 @@
         }
       }
     }
-    #navigator-toolbox[zen-sidebar-expanded="true"] {
+    #navigator-toolbox[enso-sidebar-expanded="true"] {
       @media -moz-pref("mod.lean.bottom-buttons") {
-        .zen-essentials-container {
-          :root[zen-single-toolbar="true"] &:not(:empty) {
+        .enso-essentials-container {
+          :root[enso-single-toolbar="true"] &:not(:empty) {
             padding-top: 0px !important;
           }
         }
       }
-      & #zen-sidebar-foot-buttons {
+      & #enso-sidebar-foot-buttons {
         order: -1 !important;
         justify-content: center !important;
-        padding-inline: calc(var(--zen-toolbox-padding) - 3px) !important;
+        padding-inline: calc(var(--enso-toolbox-padding) - 3px) !important;
         gap: 4px !important;
         padding-top: 4px !important;
         padding-bottom: 0px !important;
       }
-      #zen-sidebar-foot-buttons toolbarbutton {
+      #enso-sidebar-foot-buttons toolbarbutton {
         .toolbarbutton-1 {
           padding-inline: 0 !important;
           margin: 0 !important;
@@ -221,22 +221,22 @@
           }
         }
       }
-      #zen-sidebar-foot-buttons toolbarbutton {
-        background-color: var(--zen-toolbar-element-bg) !important;
+      #enso-sidebar-foot-buttons toolbarbutton {
+        background-color: var(--enso-toolbar-element-bg) !important;
         border-radius: var(--tab-border-radius) !important;
       }
-      #zen-sidebar-foot-buttons toolbarbutton:hover {
+      #enso-sidebar-foot-buttons toolbarbutton:hover {
         background-color: var(--toolbarbutton-hover-background) !important;
       }
       @media not -moz-pref("mod.lean.pinned-ext.workspaces") {  
-        #zen-workspaces-button {
+        #enso-workspaces-button {
           display: none !important; 
           height: 0 !important;
           min-height: 0 !important;
         }
       }
       @media -moz-pref("mod.lean.pinned-ext.workspaces") {  
-        #zen-sidebar-foot-buttons {
+        #enso-sidebar-foot-buttons {
           gap: 0px !important;
         }
       }
@@ -246,16 +246,16 @@
 
 @media not -moz-pref("mod.lean.bottom-buttons") {
   @media -moz-pref("mod.lean.pinned-ext") {
-    #main-window[zen-single-toolbar="true"] {
-      #navigator-toolbox[zen-sidebar-expanded="true"] {
-        & #zen-sidebar-foot-buttons {
+    #main-window[enso-single-toolbar="true"] {
+      #navigator-toolbox[enso-sidebar-expanded="true"] {
+        & #enso-sidebar-foot-buttons {
           min-height: 30px !important;
         }
-        #zen-sidebar-foot-buttons toolbarbutton {
+        #enso-sidebar-foot-buttons toolbarbutton {
           margin-block: 1px 0px !important;
           height: 30px !important;
         }
-        & #zen-sidebar-foot-buttons {
+        & #enso-sidebar-foot-buttons {
           padding-top: 4px !important;
         }
       }
@@ -266,23 +266,23 @@
 /* Part B: When bottom buttons are only shown in hover */
 @media -moz-pref("mod.lean.bottom-buttons") {
   @media -moz-pref("mod.lean.pinned-ext") {
-    #main-window[zen-single-toolbar="true"] {
-      #navigator-toolbox[zen-sidebar-expanded="true"]:hover {
-        & #zen-sidebar-foot-buttons {
+    #main-window[enso-single-toolbar="true"] {
+      #navigator-toolbox[enso-sidebar-expanded="true"]:hover {
+        & #enso-sidebar-foot-buttons {
           min-height: 30px !important;
           padding-bottom: 4px !important;
         }
-        #zen-sidebar-foot-buttons toolbarbutton {
+        #enso-sidebar-foot-buttons toolbarbutton {
           margin-block: 1px 0px !important;
           min-width: 40px !important;
           height: 30px !important;
         }
       }
-      #navigator-toolbox[zen-sidebar-expanded="true"] {
-        & #zen-sidebar-foot-buttons {
+      #navigator-toolbox[enso-sidebar-expanded="true"] {
+        & #enso-sidebar-foot-buttons {
           min-height: 0px !important;
         }
-        #zen-sidebar-foot-buttons toolbarbutton {
+        #enso-sidebar-foot-buttons toolbarbutton {
           margin-block: 1px 0px !important;
           height: 0px !important;
         }

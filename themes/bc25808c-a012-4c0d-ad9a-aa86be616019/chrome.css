@@ -6,7 +6,7 @@
     transform-origin: right;
     transition: all 0.2s linear !important;
     --toolbarbutton-border-radius: 10px;
-    --urlbarView-separator-color: var(--zen-colors-border);
+    --urlbarView-separator-color: var(--enso-colors-border);
     --urlbarView-hover-background: var(--toolbarbutton-hover-background);
     --urlbarView-highlight-background: var(--toolbarbutton-hover-background);
     border: 1px solid var(--sno-colors-border);
@@ -34,7 +34,7 @@
   ) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     width: -moz-available;
-    border-radius: var(--zen-webview-border-radius, var(--zen-border-radius));
+    border-radius: var(--enso-webview-border-radius, var(--enso-border-radius));
     transform: translate3d(0, 0, 0);
     position: relative;
 
@@ -56,7 +56,7 @@
        * same shadow from the browser window on top. */
       box-shadow:
         var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-        0 0 0 16px var(--zen-main-browser-background) !important;
+        0 0 0 16px var(--enso-main-browser-background) !important;
       clip-path: inset(0);
       pointer-events: none;
     }

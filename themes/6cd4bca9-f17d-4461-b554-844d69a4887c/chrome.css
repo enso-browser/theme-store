@@ -1,4 +1,4 @@
-#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+#navigator-toolbox[enso-right-side="true"] > #enso-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
     margin-top: 11px !important;
 }
 
@@ -33,7 +33,7 @@
     visibility: collapse !important;
 }
 
-@media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-icon-visibility"){
+@media (-moz-bool-pref: "theme.enso-minimal-exit-menu.enable-icon-visibility"){
     .titlebar-button > image {
         visibility: visible !important;
         max-height: 8px !important;
@@ -44,15 +44,15 @@
     }
 }
 
-@media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+@media (-moz-bool-pref: "theme.enso-minimal-exit-menu.enable-macos-identic") {
     .titlebar-button:hover {
         opacity: 0.25 !important;
     }
 }
 
-@media not (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+@media not (-moz-bool-pref: "theme.enso-minimal-exit-menu.enable-macos-identic") {
     .titlebar-button {
-        background-color: var(--zen-colors-border) !important;
+        background-color: var(--enso-colors-border) !important;
     }
     
     .titlebar-min:hover {

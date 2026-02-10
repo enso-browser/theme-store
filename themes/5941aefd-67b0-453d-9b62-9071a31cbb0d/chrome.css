@@ -1,19 +1,19 @@
 /* Reduce width */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+@media (-moz-bool-pref: "enso.view.sidebar-expanded") {
   #navigator-toolbox {
-    --zen-navigation-toolbar-min-width: 100px !important;
+    --enso-navigation-toolbar-min-width: 100px !important;
   }
 }
 
 /* Reduced height */
-@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-  :root[zen-compact-mode="true"] #navigator-toolbox {
+@media (-moz-bool-pref: "enso.view.compact.hide-tabbar") {
+  :root[enso-compact-mode="true"] #navigator-toolbox {
     top: calc((100vh - var(--theme-smaller_compact_mode-sidebar_height)*1vh)/2) !important;
     height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh) !important;
 
-    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    @media not (-moz-bool-pref: "enso.view.compact.hide-toolbar") {
       & {
-        height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh - var(--zen-toolbar-height-with-bookmarks)) !important;
+        height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh - var(--enso-toolbar-height-with-bookmarks)) !important;
       }
     }
   }

@@ -6,7 +6,7 @@
 	--better-findbar-position-bottom: 15px;
 	--better-findbar-position-left: 50%;
 	--better-findbar-position-right: auto;
-	--better-findbar-background-color: var(--zen-primary-color);
+	--better-findbar-background-color: var(--enso-primary-color);
 }
 
 /* Custom background */
@@ -19,7 +19,7 @@
 findbar {
 	display: flex !important;
 
-	border-radius: var(--zen-border-radius) !important;
+	border-radius: var(--enso-border-radius) !important;
 	margin: 0px !important;
 
 	width: 90% !important;

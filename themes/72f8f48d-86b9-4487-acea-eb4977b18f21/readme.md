@@ -1,5 +1,5 @@
 
-# Zen Mod: Better CtrlTab Panel
+# Enso Mod: Better CtrlTab Panel
 
 Re-style and add customization options for the CtrlTab panel.
 

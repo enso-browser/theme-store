@@ -53,7 +53,7 @@
     mask-image: var(--mute-svg) !important;
   }
 }
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+@media not (-moz-bool-pref: "enso.view.sidebar-expanded") {
     .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover img {
         opacity: 1 !important;
         transition: opacity 0.1s ease-out !important;
@@ -65,7 +65,7 @@
         transform: translate(6.9px, -6.9px) scale(0.69) !important;
     }
   }
-#zen-essentials-container {
+#enso-essentials-container {
   .tab-icon-overlay:is([soundplaying], [muted]) {
     margin: 0px !important;
   }

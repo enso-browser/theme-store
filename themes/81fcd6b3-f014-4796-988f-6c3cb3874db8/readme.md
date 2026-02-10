@@ -2,7 +2,7 @@ What can you do with this Mod:
 
 - Hide all separators in context menu
 - Hide all icons, excluding checkboxes & extension context menu
-- Apply your Zen workspace colors to all context menu, tab previews, and small notification pop-ups _**NEW!**_
+- Apply your Enso workspace colors to all context menu, tab previews, and small notification pop-ups _**NEW!**_
 - Fix margins for checkboxes & extension context menu on Windows, including "Tabs on the right" and "Compact Mode" options
 - Prioritizing "Copy Clean Link", hide default Copy Link option unless a small trigger area is hovered
 - Hide "Menu Bar" toggle
@@ -30,6 +30,6 @@ What can you do with this Mod:
 - Hide "Pin Tab" and "Add to Essentials" _**NEW!**_
 - Hide "This Frame" options on image context menu _**NEW!**_
 
-Go to Settings, Zen Mods, look up "Zen Context Menu", click the gear ⚙️ button, and check your desired preferences.
+Go to Settings, Enso Mods, look up "Enso Context Menu", click the gear ⚙️ button, and check your desired preferences.
 
 [Star the repo](https://github.com/KiKaraage/ZenMods/) if you appreciate this Mod! You can also report issues or give suggestions for future updates.

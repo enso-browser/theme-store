@@ -46,14 +46,14 @@
     border-radius: 0 !important;
   }
 }
-:root:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]):not(
+:root:not([enso-compact-mode="true"]):not([inDOMFullscreen="true"]):not(
     [chromehidden~="location"]
   ):not([chromehidden~="toolbar"]) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     margin: 0 !important;
     border-radius: var(
-      --zen-webview-border-radius,
-      var(--zen-border-radius)
+      --enso-webview-border-radius,
+      var(--enso-border-radius)
     ) !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -61,7 +61,7 @@
 }
 
 /* Reduce sidebar gap in compact mode */
-:root[zen-compact-mode="true"] {
+:root[enso-compact-mode="true"] {
   #navigator-toolbox {
     padding: 5px !important;
   }

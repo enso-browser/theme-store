@@ -45,7 +45,7 @@
     "ad97bb70-0066-4e42-9b5f-173a5e42c6fc": {
         "id": "ad97bb70-0066-4e42-9b5f-173a5e42c6fc",
         "name": "SuperPins",
-        "description": "This Zen Mod enhances pinned tabs/Essentials, by making some UI/UX changes.",
+        "description": "This Enso Mod enhances pinned tabs/Essentials, by making some UI/UX changes.",
         "homepage": "https://github.com/CosmoCreeper/Zen-Themes/tree/main/SuperPins",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/chrome.css",
         "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
@@ -141,7 +141,7 @@
     },
     "6cd4bca9-f17d-4461-b554-844d69a4887c": {
         "id": "6cd4bca9-f17d-4461-b554-844d69a4887c",
-        "name": "Zen Minimal Exit Menu",
+        "name": "Enso Minimal Exit Menu",
         "description": "A enso browser mod that changes the exit menu to 3 circles similar (but a bit different) to one in MacOS.",
         "homepage": "https://github.com/Dinno-DEV/zen-minimal-exit-menu",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/chrome.css",
@@ -216,7 +216,7 @@
     "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
         "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
         "name": "Sidebar Expand on Hover",
-        "description": "Readds the expand on hover feature to zen with a few extra features",
+        "description": "Readds the expand on hover feature to enso with a few extra features",
         "homepage": "https://github.com/Uiniel/zen-mods/tree/main/sidebar-expand-on-hover",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/chrome.css",
         "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
@@ -304,7 +304,7 @@
     "664c54f9-d97d-410b-a479-23dd8a08a628": {
         "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
         "name": "Better Tab Indicators",
-        "description": "This Zen Theme provides some alternative styling for the tabs on the sidebar.",
+        "description": "This Enso Theme provides some alternative styling for the tabs on the sidebar.",
         "homepage": "https://github.com/TheRealMG/zen-themes/tree/main/BetterTabIndicators",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/chrome.css",
         "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/readme.md",
@@ -379,7 +379,7 @@
     "6437fd0d-07a4-479c-86ae-3053e3c3d3f6": {
         "id": "6437fd0d-07a4-479c-86ae-3053e3c3d3f6",
         "name": "Improved Collapsed Tabs",
-        "description": "An opinionated Zen mod for improved collapsed tabs. (functionally and visually)",
+        "description": "An opinionated Enso mod for improved collapsed tabs. (functionally and visually)",
         "homepage": "https://github.com/xXMacMillanXx/improved-collapsed-tabs",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/chrome.css",
         "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/readme.md",
@@ -733,7 +733,7 @@
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
         "name": "Cleaned URL bar",
-        "description": "Cleans up zen's URL bar.",
+        "description": "Cleans up Enso's URL bar.",
         "homepage": "https://github.com/Dinno-DEV/zen-cleaned-url-bar",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/chrome.css",
         "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
@@ -747,7 +747,7 @@
     },
     "e51b85e6-cef5-45d4-9fff-6986637974e1": {
         "id": "e51b85e6-cef5-45d4-9fff-6986637974e1",
-        "name": "smaller zen toast popup",
+        "name": "smaller enso toast popup",
         "description": "Makes the 'New background tab opened!' toast popup notification less distracting and adds hover",
         "homepage": "https://github.com/lenzfliker/zen-mods/tree/main/%5BMOD%5D%20smaller%20zen%20toast%20popup",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/e51b85e6-cef5-45d4-9fff-6986637974e1/chrome.css",
@@ -790,7 +790,7 @@
     },
     "03a8e7ef-cf00-4f41-bf24-a90deeafc9db": {
         "id": "03a8e7ef-cf00-4f41-bf24-a90deeafc9db",
-        "name": "Zen Colored Picker",
+        "name": "Enso Colored Picker",
         "description": "Adds the rainbow color pad to the theme picker",
         "homepage": "https://github.com/Nimit1705/zen-colored-picker",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/chrome.css",
@@ -892,7 +892,7 @@
     },
     "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
         "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
-        "name": "Zen Context Menu",
+        "name": "Enso Context Menu",
         "description": "Declutter your right click menu, hide options you don't need",
         "homepage": "https://github.com/KiKaraage/ZenMods/",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/chrome.css",
@@ -923,7 +923,7 @@
     },
     "c8d9e6e6-e702-4e15-8972-3596e57cf398": {
         "id": "c8d9e6e6-e702-4e15-8972-3596e57cf398",
-        "name": "Zen Back Forward",
+        "name": "Enso Back Forward",
         "description": "Hide Back and Forward button when you don't need them",
         "homepage": "",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/c8d9e6e6-e702-4e15-8972-3596e57cf398/chrome.css",
@@ -1026,7 +1026,7 @@
     },
     "642854b5-88b4-4c40-b256-e035532109df": {
         "id": "642854b5-88b4-4c40-b256-e035532109df",
-        "name": "Transparent Zen",
+        "name": "Transparent Enso",
         "description": "Make the Enso Browser's tab background transparent, get smooth animations and more. Enable  features in mod settings and visit the homepage below to learn more about the features. \ud83d\udc47",
         "homepage": "https://www.sameerasw.com/zen",
         "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",

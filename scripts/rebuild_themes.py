@@ -8,17 +8,17 @@ THEMES_DATA_FILE = "./themes.json"
 
 def get_color_css_variable(color):
     if color == "primaryColor":
-        return "--zen-colors-primary"
+        return "--enso-colors-primary"
     if color == "secondaryColor":
-        return "--zen-colors-secondary"
+        return "--enso-colors-secondary"
     if color == "tertiaryColor":
-        return "--zen-colors-tertiary"
+        return "--enso-colors-tertiary"
     if color == "colorsBorder":
-        return "--zen-colors-border"
+        return "--enso-colors-border"
     if color == "dialogBg":
-        return "--zen-dialog-background"
+        return "--enso-dialog-background"
     if color == "accentColor":
-        return "--zen-primary-color"
+        return "--enso-primary-color"
     print(f"Unknown color: {color}")
     exit(1)
 

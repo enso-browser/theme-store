@@ -1,6 +1,6 @@
-# Zen Cleaned URL Bar
+# Enso Cleaned URL Bar
 
-Cleans up zen's URL bar. Current customization:
+Cleans up Enso's URL bar. Current customization:
 - The URL panel's color
 - The URL panel's transparency
 - The URL selected's color

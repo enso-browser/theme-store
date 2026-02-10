@@ -1,8 +1,8 @@
-/* Zen Context Menu v3.1 by KiKaraage */
+/* Enso Context Menu v3.1 by KiKaraage */
 
 /* Fix ergonomics for tab context menu by applying some reorderings 
 * plus hiding disabled options and some separators
-* Applied by default when enabling Zen Context Menu mod */
+* Applied by default when enabling Enso Context Menu mod */
 @media -moz-pref("uc.fixcontext.ergonomicsfortabs") {
   #tabContextMenu {
     :nth-child(22), /* Separator below "Duplicate Tab" */
@@ -12,21 +12,21 @@
     #context_selectedAllTabs, #toolbar-context-selectAllTabs,
     #context_closeTabOptions,
     :nth-child(37), /* Separator below "Split Tabs" */
-    #context_zen-pinned-tab-separator, /* Separator above Replace Pinned URL */
-    #context_zenSplitTabs[label="Split Tab (multiple selected tabs needed)"],
-    #context_zenSplitTabs[disabled="true"],
+    #context_enso-pinned-tab-separator, /* Separator above Replace Pinned URL */
+    #context_ensoSplitTabs[label="Split Tab (multiple selected tabs needed)"],
+    #context_ensoSplitTabs[disabled="true"],
     #context_closeDuplicateTabs[disabled]{
       display: none;
     }
     #context_toggleMuteTab,
     #context_toggleMuteSelectedTabs,
-    #context_zen-add-essential,
-    #context_zen-remove-essential,
+    #context_enso-add-essential,
+    #context_enso-remove-essential,
     #context_pinTab,
     #context_pinSelectedTabs,
     #context_unpinTab,
     #context_unpinSelectedTabs,
-    #context_zenSplitTabs:not([disabled="true"]) {
+    #context_ensoSplitTabs:not([disabled="true"]) {
       order: -8 !important;
     }
     #context_duplicateTab,
@@ -35,24 +35,24 @@
       order: -7 !important;
     }
     :nth-child(6), /* Separator below "New Folder" */
-    #zen-context-menu-new-folder {
+    #enso-context-menu-new-folder {
       order: -6 !important;
     }
     #context_moveTabToGroup,
     #context_reopenInContainer,
-    #context-zen-change-workspace-tab {
+    #context-enso-change-workspace-tab {
       order: -5 !important;
     }
     :nth-child(35), /* Separator below "Change Tabs to Workspace" */ 
     #context_sendTabToDevice,
-    #context_zenSplitTabs,
+    #context_ensoSplitTabs,
     #context_undoCloseTab {
       order: -3 !important;
     } 
     #context_closeTab,
     #context_closeDuplicateTabs,
-    #context_zen-reset-pinned-tab,
-    #context_zen-replace-pinned-url-with-current {
+    #context_enso-reset-pinned-tab,
+    #context_enso-replace-pinned-url-with-current {
       order: 2;
     }
   }
@@ -66,7 +66,7 @@
     padding-block: 0px !important;
   }
 }
-/* Hide all icons in context menu, except checkboxes and radio buttons, to fit current Zen styling */
+/* Hide all icons in context menu, except checkboxes and radio buttons, to fit current Enso styling */
 @media -moz-pref("uc.hidecontext.icons") {
   :not(:not(menubar) > menu, #ContentSelectDropdown)
   > menupopup
@@ -121,22 +121,22 @@
     }
   }
 }
-/* Apply Zen workspace gradient to all context menu and panels
+/* Apply Enso workspace gradient to all context menu and panels
 * Suitable if the OS, desktop environment or window manager supported blur background */
-@media -moz-pref("uc.fixcontext.applyzengradient") {
+@media -moz-pref("uc.fixcontext.applyensogradient") {
   menupopup, panel {
-    --panel-background: var(--zen-main-browser-background) !important;
+    --panel-background: var(--enso-main-browser-background) !important;
   }
-  /* Fix text color on Firefox confirmation pop-ups when applying Zen colors on light mode */
+  /* Fix text color on Firefox confirmation pop-ups when applying Enso colors on light mode */
   #confirmation-hint {
     --arrowpanel-color: var(--sidebar-text-color) !important;
     border: none !important;
   }
 }
-/* Apply Zen workspace accent color to all context menu and panels*/
-@media -moz-pref("uc.fixcontext.applyzenaccent") {
+/* Apply Enso workspace accent color to all context menu and panels*/
+@media -moz-pref("uc.fixcontext.applyensoaccent") {
   menupopup, panel {
-    --panel-background: color-mix(in srgb, var(--zen-primary-color) 40%, var(--zen-colors-tertiary)) !important;
+    --panel-background: color-mix(in srgb, var(--enso-primary-color) 40%, var(--enso-colors-tertiary)) !important;
   }
 }
 /* Prioritize “Copy Clean Link" when available, otherwise, only show "Copy Link” */
@@ -315,8 +315,8 @@
   #context_unpinTab,
   #context_pinSelectedTabs,
   #context_unpinSelectedTabs,
-  #context_zen-add-essential,
-  #context_zen-remove-essential {
+  #context_enso-add-essential,
+  #context_enso-remove-essential {
     display: none !important;
   }
 }
@@ -330,14 +330,14 @@
 
 /* Restore back context menu icons pre-1.12.9b */
 /* I'm not guaranteeing there will be icons for future context menu options */
-/* Help me contribute on this, hit me up on github.com/KiKaraage/ZenMods/issues */
+/* Help me contribute on this, hit me up on github.com/KiKaraage/EnsoMods/issues */
 
 /* PART 1: Setting inline padding and margin values */
 :root {
   @media -moz-pref("uc.fixcontext.restoreicons") {
-    --zen-contextmenu-menuitem-padding-inline: 5px !important;
-    --zen-contextmenu-menuicon-margin-inline: 3px !important;
-    --zen-contextmenu-menuitem-margin: 0px 2px !important;
+    --enso-contextmenu-menuitem-padding-inline: 5px !important;
+    --enso-contextmenu-menuicon-margin-inline: 3px !important;
+    --enso-contextmenu-menuitem-margin: 0px 2px !important;
   }
 }
 
@@ -345,7 +345,7 @@
   /* PART 2: Adding start inline padding to options, 
   * For now this also affected items with existing paddings
   * Like on toolbar context menu, or on extension options
-  * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
+  * Help me fix this, hit me up on github.com/KiKaraage/EnsoMods/issues */
   .menu-text {
     @media (-moz-platform: windows) {
       padding-inline-start: 24px !important;
@@ -365,7 +365,7 @@
   ) {
     background-image: var(--menu-image) !important;
     background-size: 16px !important;
-    background-position: var(--zen-contextmenu-menuitem-padding-inline) center !important;
+    background-position: var(--enso-contextmenu-menuitem-padding-inline) center !important;
     background-repeat: no-repeat !important;
     -moz-context-properties: fill, fill-opacity !important;
     fill: currentColor !important;
@@ -382,7 +382,7 @@
   #unified-extensions-context-menu menuitem {
     background-image: var(--menu-image) !important;
     background-size: 16px !important;
-    background-position: var(--zen-contextmenu-menuitem-padding-inline) center !important;
+    background-position: var(--enso-contextmenu-menuitem-padding-inline) center !important;
     background-repeat: no-repeat !important;
     -moz-context-properties: fill, fill-opacity !important;
     fill: currentColor !important; 
@@ -390,17 +390,17 @@
 
   /* PART 5: Normalize left padding for options with checkboxes, like Compact Mode options
   * Still not applied to options like 'Tabs on the right' sadly
-  * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
+  * Help me fix this, hit me up on github.com/KiKaraage/EnsoMods/issues */
   @media (-moz-platform: windows) {
     @media -moz-pref("uc.fixcontext.restoreicons") {
       menupopup > menuitem[checked='true'] {
-        padding-inline-start: var(--zen-contextmenu-menuicon-margin-inline) !important;
+        padding-inline-start: var(--enso-contextmenu-menuicon-margin-inline) !important;
         > .menu-text {
           padding: 0 !important;
         }
       }
       menupopup > menuitem[checked='false'] {
-        padding-inline: calc(var(--zen-contextmenu-menuicon-margin-inline) + 0px) !important;
+        padding-inline: calc(var(--enso-contextmenu-menuicon-margin-inline) + 0px) !important;
       }
     }
   }
@@ -410,84 +410,84 @@
 @media not (-moz-platform: linux) {
   @media -moz-pref("uc.fixcontext.restoreicons") {
     .unified-extensions-context-menu-pin-to-toolbar {
-      --menu-image: url('chrome://browser/skin/zen-icons/pin.svg');
+      --menu-image: url('chrome://browser/skin/enso-icons/pin.svg');
     }
   }
   .unified-extensions-context-menu-move-widget-down {
-    --menu-image: url('chrome://browser/skin/zen-icons/arrow-down.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/arrow-down.svg');
   }
   .unified-extensions-context-menu-move-widget-up {
-    --menu-image: url('chrome://browser/skin/zen-icons/arrow-up.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/arrow-up.svg');
   }
 }
 
 /* PART 7:  Specifying icons to apply for other context menu options */
-/* Use icons from Zen icon directory - chrome://browser/skin/zen-icons/ */
+/* Use icons from Enso icon directory - chrome://browser/skin/enso-icons/ */
 /* Use icons from Firefox icon directory - chrome://browser/skin/ */
 @media -moz-pref("uc.fixcontext.restoreicons") {  
-  #context_zenSplitTabs {
-    --menu-image: url('chrome://browser/skin/zen-icons/sidebars-right.svg') !important;
+  #context_ensoSplitTabs {
+    --menu-image: url('chrome://browser/skin/enso-icons/sidebars-right.svg') !important;
   }
-  #context-zenSplitLink {
-    --menu-image: url('chrome://browser/skin/zen-icons/split.svg') !important;
+  #context-ensoSplitLink {
+    --menu-image: url('chrome://browser/skin/enso-icons/split.svg') !important;
   }
 
-  #context_zenOpenWorkspace,
-  #context_zenOpenWorkspacePanel {
-    --menu-image: url('chrome://browser/skin/zen-icons/manage.svg') !important;
+  #context_ensoOpenWorkspace,
+  #context_ensoOpenWorkspacePanel {
+    --menu-image: url('chrome://browser/skin/enso-icons/manage.svg') !important;
   }
-  #context_zenEditWorkspaceIcon {
-    --menu-image: url('chrome://browser/skin/zen-icons/canvas.svg') !important;
+  #context_ensoEditWorkspaceIcon {
+    --menu-image: url('chrome://browser/skin/enso-icons/canvas.svg') !important;
   }
-  .zenToolbarThemePicker,
-  #zenToolbarThemePicker {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-theme.svg') !important;
+  .ensoToolbarThemePicker,
+  #ensoToolbarThemePicker {
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-theme.svg') !important;
   }
   #context-video-pictureinpicture:not([checked='true']) .menu-iconic-icon {
-    list-style-image: url('chrome://browser/skin/zen-icons/media-pip.svg') !important;
+    list-style-image: url('chrome://browser/skin/enso-icons/media-pip.svg') !important;
   }
   #context-media-loop:not([checked='true']) .menu-iconic-icon {
-    list-style-image: url('chrome://browser/skin/zen-icons/media-loop.svg') !important;
+    list-style-image: url('chrome://browser/skin/enso-icons/media-loop.svg') !important;
   }
 
   #context-savepage {
-    --menu-image: url('chrome://browser/skin/zen-icons/save.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/save.svg');
   }
   #context-selectall,
   .textbox-contextmenu menuitem[cmd*='selectAll'],
   #context_selectAllTabs,
   #toolbar-context-selectAllTabs {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-select-all.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-select-all.svg');
   }
   #context-undo,
   .textbox-contextmenu menuitem[cmd*='undo'],
   #context_undoCloseTab,
   #toolbar-context-undoCloseTab {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-undo.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-undo.svg');
   }
   #toggle_toolbar-menubar {
-    --menu-image: url('chrome://browser/skin/zen-icons/menu-bar.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/menu-bar.svg');
   }
   #context-redo,
   .textbox-contextmenu menuitem[cmd*='redo'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-redo.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-redo.svg');
   }
   #context-copy,
   .textbox-contextmenu menuitem[cmd*='copy'],
   .textbox-contextmenu #strip-on-share,
   #placesContext_copy {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-copy.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-copy.svg');
   }
   #context-paste,
   .textbox-contextmenu menuitem[cmd*='paste'],
   #placesContext_paste,
   #placesContext_paste_group {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-paste.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-paste.svg');
   }
   #context-cut,
   .textbox-contextmenu menuitem[cmd*='cut'],
   #placesContext_cut {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-cut.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-cut.svg');
   }
   #context-delete,
   .customize-context-removeExtension,
@@ -498,67 +498,67 @@
   menuitem[id='placesContext_delete'],
   menuitem[id='placesContext_delete_history'],
   menuitem[id='placesContext_deleteHost'],
-  #context_zenDeleteWebPanel,
-  #context_zenDeleteWorkspace {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit-delete.svg');
+  #context_ensoDeleteWebPanel,
+  #context_ensoDeleteWorkspace {
+    --menu-image: url('chrome://browser/skin/enso-icons/edit-delete.svg');
   }
   #paste-and-go {
-    --menu-image: url('chrome://browser/skin/zen-icons/paste-and-go.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/paste-and-go.svg');
   }
   #context-print-selection {
-    --menu-image: url('chrome://browser/skin/zen-icons/print.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/print.svg');
   }
   #context-take-screenshot {
-    --menu-image: url('chrome://browser/skin/zen-icons/screenshot.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/screenshot.svg');
   }
   #context-viewsource {
-    --menu-image: url('chrome://browser/skin/zen-icons/source-code.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/source-code.svg');
   }
   #context-inspect-a11y {
-    --menu-image: url('chrome://browser/skin/zen-icons/accessibility.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/accessibility.svg');
   }
   #context-inspect {
-    --menu-image: url('chrome://browser/skin/zen-icons/inspect.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/inspect.svg');
   }
   #context-searchselect {
-    --menu-image: url('chrome://browser/skin/zen-icons/search-glass.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/search-glass.svg');
   }
   #context-searchselect-private {
     --menu-image: url('chrome://browser/skin/privateBrowsing.svg');
   }
   #context-viewimage {
-    --menu-image: url('chrome://browser/skin/zen-icons/image-open.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/image-open.svg');
   }
   #context-viewimageinfo {
-    --menu-image: url('chrome://browser/skin/zen-icons/info.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/info.svg');
   }
   #context-saveimage,
   #context-video-saveimage {
-    --menu-image: url('chrome://browser/skin/zen-icons/image-save.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/image-save.svg');
   }
   #context-savevideo {
-    --menu-image: url('chrome://browser/skin/zen-icons/video-save.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/video-save.svg');
   }
   #context-viewvideo {
-    --menu-image: url('chrome://browser/skin/zen-icons/video-open.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/video-open.svg');
   }
   #context-saveaudio {
-    --menu-image: url('chrome://browser/skin/zen-icons/audio-save.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/audio-save.svg');
   }
   #context-copyimage-contents {
-    --menu-image: url('chrome://browser/skin/zen-icons/image-copy.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/image-copy.svg');
   }
   #context-copyimage,
   #context-copyvideourl,
   #context-copylink,
   #context-stripOnShareLink,
-  #context_zenOpenNewTabWebPanel,
+  #context_ensoOpenNewTabWebPanel,
   #context-pdfjs-copy {
-    --menu-image: url('chrome://browser/skin/zen-icons/link.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/link.svg');
   }
   #placesContext_open,
   #context-openlinkincurrent {
-    --menu-image: url('chrome://browser/skin/zen-icons/ext-link.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/ext-link.svg');
   }
   #context-ask-chat {
     --menu-image: url('chrome://browser/skin/trending.svg');
@@ -569,130 +569,130 @@
   #context-viewsource,
   #context-viewframesource,
   #context-viewpartialsource-selection {
-    --menu-image: url('chrome://browser/skin/zen-icons/source-code.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/source-code.svg');
   }
   #context-sendimage,
   #context-sendvideo,
   #context-sendaudio {
-    --menu-image: url('chrome://browser/skin/zen-icons/mail.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/mail.svg');
   }
   #context-setDesktopBackground,
   .viewCustomizeToolbar {
-    --menu-image: url('chrome://browser/skin/zen-icons/customize.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/customize.svg');
   }
   #context-reloadimage,
   #context_reloadTab,
   #context_reloadSelectedTabs,
   #toolbar-context-reloadSelectedTab,
   #toolbar-context-reloadSelectedTabs,
-  #context_zen-reset-pinned-tab {
-    --menu-image: url('chrome://browser/skin/zen-icons/reload.svg');
+  #context_enso-reset-pinned-tab {
+    --menu-image: url('chrome://browser/skin/enso-icons/reload.svg');
   }
   #context-sendlinktodevice,
   #context_sendTabToDevice,
   #context-sendpagetodevice {
-    --menu-image: url('chrome://browser/skin/zen-icons/send-to-device.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/send-to-device.svg');
   }
   #context-openlinkintab,
   #context-openlinkincontainertab,
-  #context_zenWorkspacesOpenInContainerTab,
-  #context_zenWebPanelContextInContainer,
+  #context_ensoWorkspacesOpenInContainerTab,
+  #context_ensoWebPanelContextInContainer,
   menuitem[id='placesContext_open:newtab'],
   menuitem[id='placesContext_openLinks:tabs'],
   menuitem[id='placesContext_openBookmarkLinks:tabs'],
   menuitem[id='placesContext_openBookmarkContainer:tabs'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/tab.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/tab.svg');
   }
   #context_openANewTab,
   #toolbar-context-openANewTab {
-    --menu-image: url('chrome://browser/skin/zen-icons/new-tab-image.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/new-tab-image.svg');
   }
   #context-openlinkinusercontext-menu,
   menu[id='placesContext_open:newcontainertab'],
   menu[id='placesContext_openContainer:tabs'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/container-tab.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/container-tab.svg');
   }
   #context-openlink,
   menuitem[id='placesContext_open:newwindow'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/window.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/window.svg');
   }
   #context-openlinkprivate,
   menuitem[id='placesContext_open:newprivatewindow'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/private-window.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/private-window.svg');
   }
   #context-savelink {
-    --menu-image: url('chrome://browser/skin/zen-icons/downloads.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/downloads.svg');
   }
   #spell-add-to-dictionary {
-    --menu-image: url('chrome://browser/skin/zen-icons/add-to-dictionary.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/add-to-dictionary.svg');
   }
   #manage-saved-logins {
-    --menu-image: url('chrome://browser/skin/zen-icons/passwords.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/passwords.svg');
   }
   #context-media-play,
   #context_playTab,
   #context_playSelectedTabs {
-    --menu-image: url('chrome://browser/skin/zen-icons/media-play.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/media-play.svg');
   }
   #context-media-pause {
-    --menu-image: url('chrome://browser/skin/zen-icons/media-pause.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/media-pause.svg');
   }
   #context-media-mute,
   #context_toggleMuteTab,
   #context_toggleMuteSelectedTabs,
-  #context_zenToggleMuteWebPanel {
-    --menu-image: url('chrome://browser/skin/zen-icons/media-mute.svg');
+  #context_ensoToggleMuteWebPanel {
+    --menu-image: url('chrome://browser/skin/enso-icons/media-mute.svg');
   }
   #context-media-unmute,
   #context_toggleMuteTab[muted],
   #context_toggleMuteSelectedTabs[muted],
-  #context_zenToggleMuteWebPanel[muted] {
-    --menu-image: url('chrome://browser/skin/zen-icons/media-unmute.svg');
+  #context_ensoToggleMuteWebPanel[muted] {
+    --menu-image: url('chrome://browser/skin/enso-icons/media-unmute.svg');
   }
   #context-media-playbackrate {
-    --menu-image: url('chrome://browser/skin/zen-icons/media-speed.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/media-speed.svg');
   }
   #context-video-fullscreen {
-    --menu-image: url('chrome://browser/skin/zen-icons/fullscreen.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/fullscreen.svg');
   }
   #context-leave-dom-fullscreen,
   menuitem[contexttype='fullscreen'][label*='Exit'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/fullscreen-exit.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/fullscreen-exit.svg');
   }
   #context-media-hidecontrols,
   #context-media-showcontrols {
-    --menu-image: url('chrome://browser/skin/zen-icons/permissions.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/permissions.svg');
   }
   #context_pinTab,
   #context_unpinTab,
   #context_pinSelectedTabs,
   #context_unpinSelectedTabs,
   .customize-context-moveToPanel,
-  #context_zen-replace-pinned-url-with-current {
-    --menu-image: url('chrome://browser/skin/zen-icons/pin.svg');
+  #context_enso-replace-pinned-url-with-current {
+    --menu-image: url('chrome://browser/skin/enso-icons/pin.svg');
   }
-  #context_zen-add-essential {
-    --menu-image: url('chrome://browser/skin/zen-icons/essential-add.svg');
+  #context_enso-add-essential {
+    --menu-image: url('chrome://browser/skin/enso-icons/essential-add.svg');
   }
-  #context_zen-remove-essential {
-    --menu-image: url('chrome://browser/skin/zen-icons/essential-remove.svg');
+  #context_enso-remove-essential {
+    --menu-image: url('chrome://browser/skin/enso-icons/essential-remove.svg');
   }
   .customize-context-removeFromToolbar {
-    --menu-image: url('chrome://browser/skin/zen-icons/unpin.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/unpin.svg');
   }
-  #zen-sidebar-web-panel-pinned[pinned='true'] {
-    list-style-image: url('chrome://browser/skin/zen-icons/pin.svg') !important;
+  #enso-sidebar-web-panel-pinned[pinned='true'] {
+    list-style-image: url('chrome://browser/skin/enso-icons/pin.svg') !important;
   }
-  #zen-sidebar-web-panel-pinned {
-    list-style-image: url('chrome://browser/skin/zen-icons/unpin.svg') !important;
+  #enso-sidebar-web-panel-pinned {
+    list-style-image: url('chrome://browser/skin/enso-icons/unpin.svg') !important;
   }
   #context_duplicateTab,
   #context_duplicateTabs,
-  menuitem[data-l10n-id="zen-panel-ui-workspaces-create"] {
-    --menu-image: url('chrome://browser/skin/zen-icons/duplicate-tab.svg');
+  menuitem[data-l10n-id="enso-panel-ui-workspaces-create"] {
+    --menu-image: url('chrome://browser/skin/enso-icons/duplicate-tab.svg');
   }
-  #zen-context-menu-compact-mode {
-    --menu-image: url('chrome://browser/skin/zen-icons/sidebar.svg');
+  #enso-context-menu-compact-mode {
+    --menu-image: url('chrome://browser/skin/enso-icons/sidebar.svg');
   }
   #context_bookmarkTab,
   #context_bookmarkSelectedTabs,
@@ -700,74 +700,74 @@
   #context-bookmarklink,
   #toolbar-context-bookmarkSelectedTab,
   #toolbar-context-bookmarkSelectedTabs {
-    --menu-image: url('chrome://browser/skin/zen-icons/bookmark-hollow.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/bookmark-hollow.svg');
   }
   menuitem[id='placesContext_show_bookmark:info'],
   menuitem[id='placesContext_show_folder:info'],
   menuitem[id='placesContext_show:info'] {
-    --menu-image: url('chrome://browser/skin/zen-icons/edit.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/edit.svg');
   }
   menuitem[id='placesContext_showAllBookmarks'],
   #BMB_bookmarksShowAllTop,
   #BMB_bookmarksShowAll,
   .customize-context-manageExtension,
   .unified-extensions-context-menu-manage-extension {
-    --menu-image: url('chrome://browser/skin/zen-icons/manage.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/manage.svg');
   }
   #BMB_viewBookmarksSidebar {
     --menu-image: url('chrome://browser/skin/sidebars.svg');
   }
   #BMB_searchBookmarks {
-    --menu-image: url('chrome://browser/skin/zen-icons/search-page.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/search-page.svg');
   }
   menuitem[id='placesContext_new:bookmark'],
   menuitem[id='placesContext_new:folder'],
   menuitem[id='placesContext_new:separator'],
-  #context_zenEditWorkspace {
-    --menu-image: url('chrome://browser/skin/zen-icons/plus.svg');
+  #context_ensoEditWorkspace {
+    --menu-image: url('chrome://browser/skin/enso-icons/plus.svg');
   }
   #context-savelinktopocket,
   #context-pocket {
-    --menu-image: url('chrome://browser/skin/zen-icons/pocket-outline.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/pocket-outline.svg');
   }
   #context_ungroupTab,
   #context_moveTabOptions,
-  #context-zen-change-workspace-tab,
-  #context_zenReorderWorkspaces {
-    --menu-image: url('chrome://browser/skin/zen-icons/move-tab.svg');
+  #context-enso-change-workspace-tab,
+  #context_ensoReorderWorkspaces {
+    --menu-image: url('chrome://browser/skin/enso-icons/move-tab.svg');
   }
   .share-tab-url-item {
-    --menu-image: url('chrome://browser/skin/zen-icons/share.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/share.svg');
   }
-  #zen-context-menu-new-folder-toolbar,
-  #zen-context-menu-new-folder {
-    --menu-image: url('chrome://browser/skin/zen-icons/folder.svg');
+  #enso-context-menu-new-folder-toolbar,
+  #enso-context-menu-new-folder {
+    --menu-image: url('chrome://browser/skin/enso-icons/folder.svg');
   }
   #context_moveTabToNewGroup,
   #context_moveTabToGroup,
   #context_reopenInContainer {
-    --menu-image: url('chrome://browser/skin/zen-icons/container-tab.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/container-tab.svg');
   }
   #context_closeTab,
   #context_closeDuplicateTabs {
-    --menu-image: url('chrome://browser/skin/zen-icons/close.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/close.svg');
   }
   #context_closeTabOptions {
-    --menu-image: url('chrome://browser/skin/zen-icons/close-all.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/close-all.svg');
   }
   #context_unloadTab,
-  #context_zenTabActions {
-    --menu-image: url('chrome://browser/skin/zen-icons/close-all.svg');
+  #context_ensoTabActions {
+    --menu-image: url('chrome://browser/skin/enso-icons/close-all.svg');
   }
   .customize-context-reportExtension,
   .unified-extensions-context-menu-report-extension {
-    --menu-image: url('chrome://browser/skin/zen-icons/report.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/report.svg');
   }
   .wordmark::after {
     content: 'Plus' !important;
   }
   #placesContext > menuitem[id="placesContext_sortBy:name"] {
-    --menu-image: url('chrome://browser/skin/zen-icons/translations.svg');
+    --menu-image: url('chrome://browser/skin/enso-icons/translations.svg');
   }
 } 
 
@@ -781,7 +781,7 @@
       margin-inline-start: 24px!important;
     }
     #context_reopenInContainerPopupMenu,
-    #context-zen-change-workspace-tab-menu-popup,
+    #context-enso-change-workspace-tab-menu-popup,
     #context_sendTabToDevicePopupMenu, #closeTabOptions, #moveTabOptionsMenu {
       menuitem:not(.menuitem-iconic) > .menu-text,
       menu > .menu-text {
@@ -790,12 +790,12 @@
     } 
   }
   /* 8B: Workspace Context Menu */
-  #zenWorkspaceMoreActions {
+  #ensoWorkspaceMoreActions {
     menuitem > .menu-text,
     menu > .menu-text {
       margin-inline-start: 24px !important;
     }
-    #context_zenWorkspacesOpenInContainerTab > menupopup {
+    #context_ensoWorkspacesOpenInContainerTab > menupopup {
       menuitem > .menu-text,
       menu > .menu-text {
         margin-inline-start: 0 !important;

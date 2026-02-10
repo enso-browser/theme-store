@@ -6,7 +6,7 @@
         "defaultValue": false
     },
     {
-        "property": "zen.widget.linux.transparency",
+        "property": "enso.widget.linux.transparency",
         "label": "\ud83d\udc40 Allow transparency on linux (TURN OFF BEFORE UNINSTALL)",
         "type": "checkbox",
         "defaultValue": false,
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "property": "zen.view.grey-out-inactive-windows",
+        "property": "enso.view.grey-out-inactive-windows",
         "label": "\ud83d\udc40 Disable transparency when not in focus on linux",
         "type": "checkbox",
         "defaultValue": false,
@@ -26,32 +26,32 @@
         ]
     },
     {
-        "property": "mod.sameerasw.zen_transparent_sidebar_enabled",
+        "property": "mod.sameerasw.enso_transparent_sidebar_enabled",
         "label": "\ud83d\udc40 Transparent sidebar (bookmarks, history and sync)",
         "type": "checkbox",
         "defaultValue": true
     },
     {
-        "property": "mod.sameerasw.zen_transparent_glance_enabled",
+        "property": "mod.sameerasw.enso_transparent_glance_enabled",
         "label": "\ud83d\udc40 Transparent glance",
         "type": "checkbox",
         "defaultValue": true
     },
     {
-        "property": "mod.sameerasw.zen_bg_color_enabled",
-        "label": "\ud83c\udfa8 Enable custom background color for Zen",
+        "property": "mod.sameerasw.enso_bg_color_enabled",
+        "label": "\ud83c\udfa8 Enable custom background color for Enso",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw.zen_transparency_color",
+        "property": "mod.sameerasw.enso_transparency_color",
         "label": "\ud83c\udfa8 Set custom background color (Overrides theme)",
         "type": "string",
         "defaultValue": "#00000000",
         "placeholder": "light-dark(#fff, #222) or RGBA or hex"
     },
     {
-        "property": "mod.sameerasw_zen_light_tint",
+        "property": "mod.sameerasw_enso_light_tint",
         "label": "\ud83c\udf19 Light website tint",
         "type": "dropdown",
         "placeholder": "Select an option",
@@ -68,46 +68,46 @@
         ]
     },
     {
-        "property": "mod.sameerasw.zen_no_shadow",
+        "property": "mod.sameerasw.enso_no_shadow",
         "label": "\ud83c\udf11 Remove the shadow around the web page",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw.zen_bg_img_enabled",
+        "property": "mod.sameerasw.enso_bg_img_enabled",
         "label": "\ud83c\udf20 Enable custom background image in full screen",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw.zen_bg_img_not_fullscreen",
+        "property": "mod.sameerasw.enso_bg_img_not_fullscreen",
         "label": "\ud83c\udf20 Always show custom background image",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw.zen_bg_img",
+        "property": "mod.sameerasw.enso_bg_img",
         "label": "\ud83c\udf20 Custom bg image",
         "type": "string",
         "defaultValue": "url('https://github.com/sameerasw/my-internet/blob/main/wallpapers/zen-coral-01.jpeg?raw=true')",
         "placeholder": "url('https://example.com/1.png')"
     },
     {
-        "property": "mod.sameerasw.zen_bg_opacity",
+        "property": "mod.sameerasw.enso_bg_opacity",
         "label": "\ud83c\udf20 Custom bg image opacity (0\u20131)",
         "type": "string",
         "defaultValue": "0.8",
         "placeholder": "0.75"
     },
     {
-        "property": "mod.sameerasw.zen_bg_blur",
+        "property": "mod.sameerasw.enso_bg_blur",
         "label": "\ud83c\udf20 Custom bg image blur (px)",
         "type": "string",
         "defaultValue": "3px",
         "placeholder": "3px"
     },
     {
-        "property": "mod.sameerasw_zen_empty_tab_logo",
+        "property": "mod.sameerasw_enso_empty_tab_logo",
         "label": "\ud83d\uddbc\ufe0f Enable empty tab logo",
         "type": "dropdown",
         "placeholder": "Select an option",
@@ -132,28 +132,28 @@
         ]
     },
     {
-        "property": "mod.sameerasw.zen_notab_img",
+        "property": "mod.sameerasw.enso_notab_img",
         "label": "\ud83d\uddbc\ufe0f Empty tab logo URL",
         "type": "string",
         "defaultValue": "url('https://github.com/sameerasw/my-internet/blob/main/wave-light.png?raw=true')",
         "placeholder": "url('https://example.com/1.png')"
     },
     {
-        "property": "mod.sameerasw.zen_notab_img_size",
+        "property": "mod.sameerasw.enso_notab_img_size",
         "label": "\ud83d\uddbc\ufe0f Empty tab logo size",
         "type": "string",
         "defaultValue": "150px",
         "placeholder": "50px"
     },
     {
-        "property": "mod.sameerasw.zen_notab_img_opacity",
+        "property": "mod.sameerasw.enso_notab_img_opacity",
         "label": "\ud83d\uddbc\ufe0f Empty tab logo opacity (0-1)",
         "type": "string",
         "defaultValue": "1",
         "placeholder": "0.75"
     },
     {
-        "property": "mod.sameerasw_zen_compact_sidebar_type",
+        "property": "mod.sameerasw_enso_compact_sidebar_type",
         "label": "\u2194\ufe0f Compact transparent sidebar type",
         "type": "dropdown",
         "placeholder": "Select an option",
@@ -174,32 +174,32 @@
         ]
     },
     {
-        "property": "mod.sameerasw.zen_compact_sidebar_width",
+        "property": "mod.sameerasw.enso_compact_sidebar_width",
         "label": "\u2194\ufe0f Custom compact sidebar width",
         "type": "string",
         "defaultValue": "165px",
         "placeholder": "165px (use px)"
     },
     {
-        "property": "mod.sameerasw.zen_tab_switch_anim",
+        "property": "mod.sameerasw.enso_tab_switch_anim",
         "label": "\u2728 Tab switch animation",
         "type": "checkbox",
         "defaultValue": true
     },
     {
-        "property": "mod.sameerasw.zen_urlbar_zoom_anim",
+        "property": "mod.sameerasw.enso_urlbar_zoom_anim",
         "label": "\u2728 URL bar zoom animation",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw.zen_trackpad_anim",
+        "property": "mod.sameerasw.enso_trackpad_anim",
         "label": "\u2728 Trackpad swipe animations",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "mod.sameerasw_zen_animations",
+        "property": "mod.sameerasw_enso_animations",
         "label": "\u2728 Animation smoothness",
         "type": "dropdown",
         "placeholder": "Select an option",

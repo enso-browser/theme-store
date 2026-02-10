@@ -1,6 +1,6 @@
 [
     {
-        "property": "mod.zentoast.background_opacity",
+        "property": "mod.ensotoast.background_opacity",
         "label": "Background opacity",
         "type": "dropdown",
         "placeholder": "Select background opacity",
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "property": "mod.zentoast.border_opacity",
+        "property": "mod.ensotoast.border_opacity",
         "label": "Border opacity",
         "type": "dropdown",
         "placeholder": "Select border opacity",
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "property": "mod.zentoast.text_opacity",
+        "property": "mod.ensotoast.text_opacity",
         "label": "Text opacity",
         "type": "dropdown",
         "placeholder": "Select text opacity",

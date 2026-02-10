@@ -1,11 +1,11 @@
 
-#zen-site-data-addons {
+#enso-site-data-addons {
     display: block !important;
 
 #overflowed-extensions-list,
     & #unified-extensions-area,
     & .unified-extensions-list,
-    & #zen-site-data-new-addon-button-container {
+    & #enso-site-data-new-addon-button-container {
         &>* {
             width: 100% !important;
             height: auto !important;

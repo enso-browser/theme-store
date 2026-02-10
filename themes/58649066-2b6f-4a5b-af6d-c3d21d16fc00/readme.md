@@ -1,6 +1,6 @@
 # Private Browsing Mode Highlighting
 
-Any Zen window in private browsing mode isn't obviously indicated by default. This theme fixes that.
+Any Enso window in private browsing mode isn't obviously indicated by default. This theme fixes that.
 
 ## What this theme does.
 
@@ -15,9 +15,9 @@ It also comes with the following settings:
 * Replace the gradient with a solid purple color.
 * Remove the background color entirely.
 * Remove the purple border that surrounds the page.
-* Changes the purple highlight color to either match Zen's theme color, or a custom color of your choice.
+* Changes the purple highlight color to either match Enso's theme color, or a custom color of your choice.
 * Hide the private browsing icon.
 
-These settings can be found in Zen's browser settings, in the 'Zen Mods' tab.
+These settings can be found in Enso's browser settings, in the 'Enso Mods' tab.
 
 Encountered an issue? Raise them [here](https://github.com/danm36/enso-browser-private-browsing-toolbar-highlighting/issues).

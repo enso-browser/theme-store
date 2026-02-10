@@ -5,19 +5,19 @@
         "type": "dropdown",
         "options": [
             {
-                "label": "Zen primary",
+                "label": "Enso primary",
                 "value": "primary"
             },
             {
-                "label": "Zen secondary",
+                "label": "Enso secondary",
                 "value": "secondary"
             },
             {
-                "label": "Zen tertiary",
+                "label": "Enso tertiary",
                 "value": "tertiary"
             },
             {
-                "label": "Zen border",
+                "label": "Enso border",
                 "value": "border"
             },
             {

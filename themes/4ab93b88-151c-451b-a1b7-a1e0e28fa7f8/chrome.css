@@ -5,7 +5,7 @@
 }
 
 @media (-moz-bool-pref: "theme.nosidebarscrollbar.before125b") {
-    #zen-tabs-wrapper {
+    #enso-tabs-wrapper {
         scrollbar-width: none !important;
     }
 }

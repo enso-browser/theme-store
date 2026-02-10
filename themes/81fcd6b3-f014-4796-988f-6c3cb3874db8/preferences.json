@@ -22,22 +22,22 @@
     },
     {
         "property": "uc.fixcontext.restoreicons",
-        "label": "\ud83d\udd23 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/ZenMods repo)",
+        "label": "\ud83d\udd23 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/EnsoMods repo)",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.icons",
-        "label": "\ud83d\udd23 Hide all icons in context menu, except checkboxes and radio buttons, to fit current Zen styling",
+        "label": "\ud83d\udd23 Hide all icons in context menu, except checkboxes and radio buttons, to fit current Enso styling",
         "type": "checkbox"
     },
     {
-        "property": "uc.fixcontext.applyzengradient",
-        "label": "\ud83c\udfa8 Apply Zen workspace gradient (works best in Windows 11 & macOS)",
+        "property": "uc.fixcontext.applyensogradient",
+        "label": "\ud83c\udfa8 Apply Enso workspace gradient (works best in Windows 11 & macOS)",
         "type": "checkbox"
     },
     {
-        "property": "uc.fixcontext.applyzenaccent",
-        "label": "\ud83c\udfa8 Apply Zen accent color (the main color on your workspace gradient)",
+        "property": "uc.fixcontext.applyensoaccent",
+        "label": "\ud83c\udfa8 Apply Enso accent color (the main color on your workspace gradient)",
         "type": "checkbox"
     },
     {

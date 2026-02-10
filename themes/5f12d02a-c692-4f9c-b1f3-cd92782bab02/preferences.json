@@ -1,12 +1,12 @@
 [
     {
-        "property": "zen.mods.WinterSpirit.snowflakeSize",
+        "property": "enso.mods.WinterSpirit.snowflakeSize",
         "label": "Changes scale of background",
         "type": "string",
         "defaultValue": "350px"
     },
     {
-        "property": "zen.mods.WinterSpirit.duration",
+        "property": "enso.mods.WinterSpirit.duration",
         "label": "Changes background animation speed",
         "type": "string",
         "defaultValue": "30s"

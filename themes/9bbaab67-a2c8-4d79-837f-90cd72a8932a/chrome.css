@@ -1,10 +1,10 @@
 /* tab size */
-.zen-essentials-container {
+.enso-essentials-container {
 	grid-template-columns: repeat(auto-fit, minmax(80px, auto)) !important;
 }
 
 /* icon padding */
-.zen-essentials-container
+.enso-essentials-container
 	> tab
 	> stack:nth-child(1)
 	> hbox:nth-child(2)
@@ -13,7 +13,7 @@
 }
 
 /* main icon */
-.zen-essentials-container
+.enso-essentials-container
 	> tab
 	> stack:nth-child(1)
 	> hbox:nth-child(2)
@@ -24,7 +24,7 @@
 }
 
 /* reload icon */
-.zen-essentials-container
+.enso-essentials-container
 	> tab
 	> stack:nth-child(1)
 	> hbox:nth-child(2)

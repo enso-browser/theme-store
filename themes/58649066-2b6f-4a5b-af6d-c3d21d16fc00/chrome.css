@@ -1,6 +1,6 @@
 /**
-* This Zen theme adds additional styling to the private browsing mode window such as a gradient on the toolbar,
-* a border around the browser page, and an icon in the URL bar. These are configurable in the Zen Mods settings.
+* This Enso theme adds additional styling to the private browsing mode window such as a gradient on the toolbar,
+* a border around the browser page, and an icon in the URL bar. These are configurable in the Enso Mods settings.
 *
 * The --pbmh prefix stands for Private Browsing Mode Highlighting.
 */
@@ -12,7 +12,7 @@
 :root {
     --pbmh-private-browsing-mode-base-color: #32064e;
     --pbmh-private-browsing-mode-gradient-stop-color: rgb(from var(--pbmh-private-browsing-mode-color) r g b / 0%);
-    --pbmg-private-browsing-mode-gradient-stop-position: var(--zen-toolbar-height, 34px);
+    --pbmg-private-browsing-mode-gradient-stop-position: var(--enso-toolbar-height, 34px);
     --pbmg-private-browsing-mode-border-size: 2px;
 }
 
@@ -21,8 +21,8 @@
 * Topbar highlighting.
 \*******************************************/
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="match-zen"]) {
-    --pbmh-private-browsing-mode-base-color: var(--zen-primary-color);
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="match-enso"]) {
+    --pbmh-private-browsing-mode-base-color: var(--enso-primary-color);
 }
 
 :root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="blue"]) {
@@ -72,15 +72,15 @@
 }
 
 :root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style]:not([uc-private-browsing-top-bar-highlighting-style="none"])) {
-    &[privatebrowsingmode] #zen-appcontent-navbar-container,
-    &[privatebrowsingmode][zen-compact-mode="true"]:not([zen-single-toolbar="true"]) #nav-bar {
+    &[privatebrowsingmode] #enso-appcontent-navbar-container,
+    &[privatebrowsingmode][enso-compact-mode="true"]:not([enso-single-toolbar="true"]) #nav-bar {
         background-image: linear-gradient(to bottom,
                 var(--pbmh-private-browsing-mode-color),
                 var(--pbmh-private-browsing-mode-gradient-stop-color) var(--pbmg-private-browsing-mode-gradient-stop-position),
                 transparent calc(var(--pbmg-private-browsing-mode-gradient-stop-position) + 1px)) !important;
     }
 
-    &[privatebrowsingmode][zen-single-toolbar="true"] #urlbar-background {
+    &[privatebrowsingmode][enso-single-toolbar="true"] #urlbar-background {
         background-color: var(--pbmh-private-browsing-mode-color) !important;
     }
 }
@@ -104,7 +104,7 @@
 \*******************************************/
 
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.hide-icon") {
-    [privatebrowsingmode] .zen-current-workspace-indicator-icon {
+    [privatebrowsingmode] .enso-current-workspace-indicator-icon {
         display: block !important;
         color: transparent !important;
         aspect-ratio: 1;

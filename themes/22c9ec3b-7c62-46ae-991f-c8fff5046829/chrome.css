@@ -1,15 +1,15 @@
-#vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden="true"] {
+#vertical-pinned-tabs-container > .enso-workspace-tabs-section[hidden="true"] {
   display: none !important;
 }
 tabs {
   counter-reset: tab-counter;
 } /* Automatically increment tab numbers for each tab which is essential or is in an active workspace */
-hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
-zen-workspace[active] tab:not([zen-glance-tab="true"]) {
+hbox.enso-essentials-container tab:not([enso-glance-tab="true"]),
+enso-workspace[active] tab:not([enso-glance-tab="true"]) {
   counter-increment: tab-counter;
 } /* Styles when the sidebar is expanded */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
+@media (-moz-bool-pref: "enso.view.sidebar-expanded") {
+  tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content::after {
     content: counter(
       tab-counter
     ); /* Space before the number */ /* Positioning and styling */
@@ -45,7 +45,7 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   }
 
   /*  Hide tab numbers on the right side when hovering over */
-  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content:hover::after {
+  tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content:hover::after {
     opacity: 0; /* Make it invisible */
     width: 0; /* In order to bring the close button to the right */
     margin: 0;
@@ -59,10 +59,10 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
 
   /* Put tab numbers on the left side when expanded_side="Left" (AND in expanded mode) */
   :root:has(#theme-Tab-Numbers[uc-theme-expanded_side="Left"]) {
-    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
+    tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content::after {
       display: none; /* Hide the ::after pseudo-element first */
     }
-    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
+    tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content::before {
       content: counter(
         tab-counter
       ); /* Space before the number */ /* Positioning and styling */
@@ -88,8 +88,8 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
     }
   }
 } /* Styles when the sidebar is NOT expanded (compact mode) */
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
+@media not (-moz-bool-pref: "enso.view.sidebar-expanded") {
+  tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content::before {
     content: counter(tab-counter) "";
     position: absolute;
     top: 4px;
@@ -101,7 +101,7 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
     color: var(--number_color, inherit); /* Fallback to default color */
   } /* Put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
   :root:has(#theme-Tab-Numbers[uc-theme-compact_side="Left"]) {
-    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
+    tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content::before {
       content: counter(tab-counter) "";
       position: absolute;
       top: 4px;
@@ -118,12 +118,12 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   }
 } /* Enable bold text when the preference is enabled */
 @media (-moz-bool-pref: "uc.theme.bold-text-enable.enabled") {
-  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
+  tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content {
     --bold-text: bold;
   }
 }
 @media (-moz-bool-pref: "uc.theme.custom_color_enabled") {
-  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
+  tab:not([enso-glance-tab="true"]) > .tab-stack > .tab-content {
     --number_color: var(--uc-theme-number_color) !important;
     --number_background_color: var(
       --uc-theme-number_background_color

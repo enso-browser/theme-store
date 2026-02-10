@@ -1,8 +1,8 @@
 .browserContainer {
   background: linear-gradient(
     90deg,
-    var(--zen-colors-secondary) 0%,
-    var(--zen-colors-primary) 100%
+    var(--enso-colors-secondary) 0%,
+    var(--enso-colors-primary) 100%
   );
 }
 

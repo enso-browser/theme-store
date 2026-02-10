@@ -1,4 +1,4 @@
-# zen-remove-split-view-tab-highlight
+# enso-remove-split-view-tab-highlight
 
 Mod for Enso Browser that removes the border highlight on the active tab in split view.
 

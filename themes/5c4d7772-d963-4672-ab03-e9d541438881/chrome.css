@@ -23,7 +23,7 @@
 }
 
 /* Ensure sound icon is still visible when tab not selected */
-#navigator-toolbox:not([zen-sidebar-expanded])
+#navigator-toolbox:not([enso-sidebar-expanded])
   #tabbrowser-tabs
   .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]):not(
     [selected]
@@ -40,7 +40,7 @@
   & .tab-icon-overlay {
     &:is([soundplaying], [muted]) {
       &:hover {
-        fill: var(--zen-colors-primary) !important;
+        fill: var(--enso-colors-primary) !important;
         transition: 0.2s;
         display: block !important;
       }
@@ -48,9 +48,9 @@
   }
 }
 
-/* ================== Zen essentials (expanded tabs) ================== */
-#navigator-toolbox[zen-sidebar-expanded] {
-  .tabbrowser-tab[zen-essential] {
+/* ================== Enso essentials (expanded tabs) ================== */
+#navigator-toolbox[enso-sidebar-expanded] {
+  .tabbrowser-tab[enso-essential] {
     /* Hide tab icon image for collapsed tabs and essentials */
     &:is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
       display: none !important;
@@ -74,9 +74,9 @@
   }
 }
 
-/* ================== Zen glance tab (expanded tabs) ================== */
-#navigator-toolbox[zen-sidebar-expanded] {
-  .tabbrowser-tab[zen-glance-tab] {
+/* ================== Enso glance tab (expanded tabs) ================== */
+#navigator-toolbox[enso-sidebar-expanded] {
+  .tabbrowser-tab[enso-glance-tab] {
     /* Hide tab icon image */
     &:is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
       display: none !important;
@@ -97,10 +97,10 @@
   }
 }
 
-/* ================== Zen glance tab (pinned tabs) ================== */
-#navigator-toolbox[zen-sidebar-expanded]
+/* ================== Enso glance tab (pinned tabs) ================== */
+#navigator-toolbox[enso-sidebar-expanded]
   #tabbrowser-tabs
-  .tabbrowser-tab[zen-glance-tab] {
+  .tabbrowser-tab[enso-glance-tab] {
   & .tab-throbber,
   & .tab-icon-pending,
   & .tab-icon-image,
@@ -115,8 +115,8 @@
 }
 
 /* ================== Pinned tab (tab page changed) ================== */
-#navigator-toolbox[zen-sidebar-expanded] {
-  .tabbrowser-tab[zen-pinned-changed] {
+#navigator-toolbox[enso-sidebar-expanded] {
+  .tabbrowser-tab[enso-pinned-changed] {
     /* Add extra space for sound button when reset tab button is active */
     &:is([soundplaying], [muted], [activemedia-blocked]) {
       .tab-reset-pin-button {
@@ -137,7 +137,7 @@
 }
 
 /* ================== Expanded tabs ================== */
-#navigator-toolbox[zen-sidebar-expanded] #tabbrowser-tabs .tabbrowser-tab {
+#navigator-toolbox[enso-sidebar-expanded] #tabbrowser-tabs .tabbrowser-tab {
   & .tab-throbber,
   & .tab-icon-pending,
   & .tab-icon-image,
@@ -151,7 +151,7 @@
 }
 
 /* ================== Split view (expanded tabs) ================== */
-#navigator-toolbox[zen-sidebar-expanded]
+#navigator-toolbox[enso-sidebar-expanded]
   #tabbrowser-tabs
   .tabbrowser-tab[split-view] {
   /* Sound icon takes place of tab icon if tab is not pinned */
@@ -167,7 +167,7 @@
   & .tab-icon-overlay {
     /* Replace tab icon image with sound button; not needed if tab is pinned or essential */
     &:is([soundplaying], [muted], [activemedia-blocked]):not(
-        [zen-essential],
+        [enso-essential],
         [pinned]
       ) {
       transform: translate(-40%, 46%) scale(var(--bmb-sound-icon-scale)) !important;
@@ -182,7 +182,7 @@
 }
 
 /* ================== Collapsed tabs ================== */
-#navigator-toolbox:not([zen-sidebar-expanded]) {
+#navigator-toolbox:not([enso-sidebar-expanded]) {
   .tab-icon-overlay {
     transform: translate(-40%, 46%) scale(var(--bmb-sound-icon-scale)) !important;
 

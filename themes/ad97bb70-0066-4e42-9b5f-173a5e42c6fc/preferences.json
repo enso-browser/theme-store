@@ -3,7 +3,7 @@
         "property": "uc.essentials.width",
         "label": "Select the general width of Essentials (The width before the Essentials start wrapping to the next row)",
         "type": "dropdown",
-        "placeholder": "Zen Default",
+        "placeholder": "Enso Default",
         "defaultValue": "Normal",
         "disabledOn": [],
         "options": [
@@ -25,7 +25,7 @@
         "property": "uc.essentials.gap",
         "label": "Select the gap between Essentials",
         "type": "dropdown",
-        "placeholder": "Zen Default",
+        "placeholder": "Enso Default",
         "defaultValue": "Normal",
         "disabledOn": [],
         "options": [
@@ -53,7 +53,7 @@
         "property": "uc.essentials.color-scheme",
         "label": "Background/Color types of Essentials",
         "type": "dropdown",
-        "placeholder": "Zen Default",
+        "placeholder": "Enso Default",
         "disabledOn": [],
         "options": [
             {
@@ -159,20 +159,20 @@
         "disabledOn": []
     },
     {
-        "property": "zen.workspaces.show-workspace-indicator",
+        "property": "enso.workspaces.show-workspace-indicator",
         "label": "Shows the workspace-indicator between Essentials and Pins",
         "type": "checkbox",
         "defaultValue": true,
         "disabledOn": []
     },
     {
-        "property": "zen.workspaces.indicator-name-center",
+        "property": "enso.workspaces.indicator-name-center",
         "label": "Center the workspace indicator name",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "zen.workspaces.indicator-position",
+        "property": "enso.workspaces.indicator-position",
         "label": "Select the position of the workspace indicator",
         "type": "dropdown",
         "disabledOn": [],

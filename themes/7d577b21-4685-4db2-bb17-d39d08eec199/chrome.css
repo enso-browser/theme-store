@@ -1,5 +1,5 @@
 html:not([sizemode="fullscreen"]) {
 	.browserStack, browser {
-		clip-path: inset(0 round var(--zen-native-inner-radius));
+		clip-path: inset(0 round var(--enso-native-inner-radius));
 	}
 }

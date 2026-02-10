@@ -14,7 +14,7 @@
 
 @media (-moz-bool-pref: "border-shadow-disabled") {
   hbox.browserSidebarContainer,
-  #zen-tabbox-wrapper {
+  #enso-tabbox-wrapper {
     box-shadow: none !important;
   }
 }

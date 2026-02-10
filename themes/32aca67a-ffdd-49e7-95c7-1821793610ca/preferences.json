@@ -25,18 +25,18 @@
     },
     {
         "property": "theme.customstatusbar.color_border",
-        "label": "Set the border color. '#0e03ad' or 'var(--zen-colors-border)'",
+        "label": "Set the border color. '#0e03ad' or 'var(--enso-colors-border)'",
         "type": "string",
-        "defaultValue": "var(--zen-colors-border)",
-        "placeholder": "var(--zen-colors-border)",
+        "defaultValue": "var(--enso-colors-border)",
+        "placeholder": "var(--enso-colors-border)",
         "disabledOn": []
     },
     {
         "property": "theme.customstatusbar.color_background",
-        "label": "Set the background color. '#a403ad' or 'var(--zen-colors-tertiary)'",
+        "label": "Set the background color. '#a403ad' or 'var(--enso-colors-tertiary)'",
         "type": "string",
-        "defaultValue": "var(--zen-colors-tertiary)",
-        "placeholder": "var(--zen-colors-tertiary)",
+        "defaultValue": "var(--enso-colors-tertiary)",
+        "placeholder": "var(--enso-colors-tertiary)",
         "disabledOn": []
     },
     {

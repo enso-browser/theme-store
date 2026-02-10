@@ -57,11 +57,11 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 
 /* Default bookmark buttons background */
 #personal-bookmarks toolbarbutton.bookmark-item {
-  background-color: var(--zen-colors-tertiary) !important;
+  background-color: var(--enso-colors-tertiary) !important;
 }
 
 /* Reduce navbar container height to only cover nav-bar */
-#zen-appcontent-navbar-container {
+#enso-appcontent-navbar-container {
   height: calc(var(--urlbar-min-height) + var(--toolbarbutton-outer-padding) * 1.5) !important;
   overflow: visible !important;
 }
@@ -71,7 +71,7 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 
   /* More transparent bookmark buttons */
   #personal-bookmarks toolbarbutton.bookmark-item {
-    background-color: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
+    background-color: color-mix(in hsl, var(--enso-colors-tertiary), transparent 10%) !important;
   }
 
   /* Hover effects */
@@ -111,14 +111,14 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
   }
 
   /* Remove extra toolbar height when bookmarks are hidden */
-  &[zen-has-bookmarks="true"] {
-    --zen-toolbar-height-with-bookmarks: var(--zen-toolbar-height) !important;
+  &[enso-has-bookmarks="true"] {
+    --enso-toolbar-height-with-bookmarks: var(--enso-toolbar-height) !important;
   }
 }
 
 /* Expand the bookmarks toolbar by hovering */
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
-  #zen-appcontent-navbar-container:hover #PersonalToolbar:not([collapsed]) {
+  #enso-appcontent-navbar-container:hover #PersonalToolbar:not([collapsed]) {
     transform: rotateX(0deg) !important;
   }
 }
