@@ -1,17 +1,17 @@
 <div align="center">
 <picture>
-    <img src="https://github.com/zen-browser/.github/blob/main/profile/logo-black.png" width="128px">
+    <img src="https://github.com/enso-browser/.github/blob/main/profile/logo-black.png" width="128px">
 </picture>
 </div>
 <h1 align="center">
-🎨 Theme repository for @zen-browser!
+🎨 Theme repository for @enso-browser!
 </h1>
 
 ## Submitting a Theme
 
 To submit a theme, please follow these steps:
 
-- Open an issue in [this template](https://github.com/zen-browser/theme-store/issues/new?assignees=&labels=new-theme&projects=&template=create-theme.yml&title=%5Bcreate-theme%5D%3A+) with the title `[create-theme]: <theme-name>`
+- Open an issue in [this template](https://github.com/enso-browser/theme-store/issues/new?assignees=&labels=new-theme&projects=&template=create-theme.yml&title=%5Bcreate-theme%5D%3A+) with the title `[create-theme]: <theme-name>`
 - Fill out the template with the necessary information
 - Submit the issue
 - Let us take care of the rest!

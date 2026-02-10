@@ -1,5 +1,5 @@
 
-#zen-browser-tabs-wrapper {
+#enso-browser-tabs-wrapper {
   pointer-events: none;
   & > * {
     pointer-events: auto;

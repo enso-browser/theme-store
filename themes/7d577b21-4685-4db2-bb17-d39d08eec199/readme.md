@@ -1,9 +1,9 @@
 # Bleeding Corners Fix
-Zen Browser uses border radius to round the corners of the web page.
+Enso Browser uses border radius to round the corners of the web page.
 
 On some websites, the HTML background color can sometimes bleed-through the edges of the border radius, usually creating a white outline or artifact. This mod prevents this by applying a simple clip-path to the container, without compromising any content on the containers edge.
 
-> These mods may break or become depreciated as Zen Browser updates. However, I try to keep them up-to-date with the latest versions of Zen. If something isn't working or doesn't feel right, feel free to [submit an issue](https://github.com/rsiebertdev/zen-themes/issues/new). Made with 💖 by Roman.
+> These mods may break or become depreciated as Enso Browser updates. However, I try to keep them up-to-date with the latest versions of Zen. If something isn't working or doesn't feel right, feel free to [submit an issue](https://github.com/rsiebertdev/zen-themes/issues/new). Made with 💖 by Roman.
 
 ## Change log
 

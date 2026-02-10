@@ -1,4 +1,4 @@
-# Super Sleek UI Theme for Zen Browser
+# Super Sleek UI Theme for Enso Browser
 
 A sleek & minimalistic UI with grid-style quick access, smaller navbar, no border padding & more.
 

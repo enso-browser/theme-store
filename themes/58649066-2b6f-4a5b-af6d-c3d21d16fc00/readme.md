@@ -20,4 +20,4 @@ It also comes with the following settings:
 
 These settings can be found in Zen's browser settings, in the 'Zen Mods' tab.
 
-Encountered an issue? Raise them [here](https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting/issues).
+Encountered an issue? Raise them [here](https://github.com/danm36/enso-browser-private-browsing-toolbar-highlighting/issues).

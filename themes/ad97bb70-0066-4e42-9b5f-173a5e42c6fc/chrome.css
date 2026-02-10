@@ -116,7 +116,7 @@
     zen-workspace[active="true"]:has(.zen-workspace-pinned-tabs-section .tabbrowser-tab) {
       &:has(
         ~ #zen-tabs-wrapper
-          #zen-browser-tabs-container
+          #enso-browser-tabs-container
           #vertical-pinned-tabs-container
           .zen-workspace-tabs-section[active="true"]
           .tabbrowser-tab

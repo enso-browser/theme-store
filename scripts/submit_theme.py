@@ -68,7 +68,7 @@ def create_theme_id():
 
 
 def get_static_asset(theme_id, asset):
-    return f"https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/{theme_id}/{asset}"
+    return f"https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/{theme_id}/{asset}"
 
 
 def get_styles(is_color_theme, theme_id):
@@ -344,7 +344,7 @@ def main():
 
     print(
         """
-Welcome to the Zen Browser Theme Store!
+Welcome to the Enso Browser Theme Store!
 
 Please review the information below before submitting your theme. Also... Why are you here?
 

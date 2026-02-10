@@ -1,7 +1,7 @@
 
 # Zen "Colored" picker
 
-Get back the sweet rainbow in your color picker [Zen Browser](https://zen-browser.app/).
+Get back the sweet rainbow in your color picker [Enso Browser](https://enso-browser.app/).
 Know your colors better with Zen "Colored" picker
 
 ---

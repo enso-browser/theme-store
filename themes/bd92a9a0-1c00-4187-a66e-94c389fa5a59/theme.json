@@ -3,13 +3,13 @@
     "name": "Sidebar Expand on Hover",
     "description": "Readds the expand on hover feature to zen with a few extra features",
     "homepage": "https://github.com/Uiniel/zen-mods/tree/main/sidebar-expand-on-hover",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/image.png",
+    "style": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/chrome.css",
+    "readme": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
+    "image": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/image.png",
     "author": "Uiniel",
     "version": "2.0.0",
     "tags": [],
     "createdAt": "2024-12-10",
     "updatedAt": "2025-03-31",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
+    "preferences": "https://raw.githubusercontent.com/enso-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
 }

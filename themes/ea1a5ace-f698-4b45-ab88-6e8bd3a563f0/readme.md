@@ -30,13 +30,13 @@ This theme provides comprehensive customization options for the bookmarks toolba
 
 ## Usage
 
-Each setting can be enabled individually through the theme's configuration panel in Zen Browser settings.
+Each setting can be enabled individually through the theme's configuration panel in Enso Browser settings.
 
 **To enable the bookmarks toolbar:** Press `Ctrl + Shift + B` (or `Cmd + Shift + B` on Mac)
 
 ## Compatibility
 
-- Fully compatible with Zen Browser's bookmark management
+- Fully compatible with Enso Browser's bookmark management
 - Works with all bookmark folder structures
 - Maintains functionality of bookmark drag & drop
 - Preserves all native bookmark features

@@ -147,7 +147,7 @@ tabpanels .browserStack browser {
   #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
       background-image: var(
         --mod-sameerasw-zen_notab_img,
-        url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
+        url("https://raw.githubusercontent.com/enso-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
       ) !important;
 
       background-position: center !important;
